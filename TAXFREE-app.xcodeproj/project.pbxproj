@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		652D32BD1E6AEA26005CF7C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D32BC1E6AEA26005CF7C3 /* AppDelegate.swift */; };
+		652D32BF1E6AEA26005CF7C3 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D32BE1E6AEA26005CF7C3 /* MasterViewController.swift */; };
+		652D32C11E6AEA26005CF7C3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D32C01E6AEA26005CF7C3 /* DetailViewController.swift */; };
+		652D32C41E6AEA26005CF7C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652D32C21E6AEA26005CF7C3 /* Main.storyboard */; };
+		652D32C61E6AEA26005CF7C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 652D32C51E6AEA26005CF7C3 /* Assets.xcassets */; };
+		652D32C91E6AEA26005CF7C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652D32C71E6AEA26005CF7C3 /* LaunchScreen.storyboard */; };
+		652D32D41E6AEA26005CF7C3 /* TAXFREE_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D32D31E6AEA26005CF7C3 /* TAXFREE_appTests.swift */; };
+		652D32DF1E6AEA26005CF7C3 /* TAXFREE_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D32DE1E6AEA26005CF7C3 /* TAXFREE_appUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		652D32D01E6AEA26005CF7C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 652D32B11E6AEA25005CF7C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 652D32B81E6AEA25005CF7C3;
+			remoteInfo = "TAXFREE-app";
+		};
+		652D32DB1E6AEA26005CF7C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 652D32B11E6AEA25005CF7C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 652D32B81E6AEA25005CF7C3;
+			remoteInfo = "TAXFREE-app";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		652D32B91E6AEA26005CF7C3 /* TAXFREE-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TAXFREE-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		652D32BC1E6AEA26005CF7C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		652D32BE1E6AEA26005CF7C3 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		652D32C01E6AEA26005CF7C3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		652D32C31E6AEA26005CF7C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		652D32C51E6AEA26005CF7C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		652D32C81E6AEA26005CF7C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		652D32CA1E6AEA26005CF7C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		652D32CF1E6AEA26005CF7C3 /* TAXFREE-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TAXFREE-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		652D32D31E6AEA26005CF7C3 /* TAXFREE_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAXFREE_appTests.swift; sourceTree = "<group>"; };
+		652D32D51E6AEA26005CF7C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		652D32DA1E6AEA26005CF7C3 /* TAXFREE-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TAXFREE-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		652D32DE1E6AEA26005CF7C3 /* TAXFREE_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAXFREE_appUITests.swift; sourceTree = "<group>"; };
+		652D32E01E6AEA26005CF7C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		652D32B61E6AEA25005CF7C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652D32CC1E6AEA26005CF7C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652D32D71E6AEA26005CF7C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		652D32B01E6AEA25005CF7C3 = {
+			isa = PBXGroup;
+			children = (
+				652D32BB1E6AEA26005CF7C3 /* TAXFREE-app */,
+				652D32D21E6AEA26005CF7C3 /* TAXFREE-appTests */,
+				652D32DD1E6AEA26005CF7C3 /* TAXFREE-appUITests */,
+				652D32BA1E6AEA26005CF7C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		652D32BA1E6AEA26005CF7C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				652D32B91E6AEA26005CF7C3 /* TAXFREE-app.app */,
+				652D32CF1E6AEA26005CF7C3 /* TAXFREE-appTests.xctest */,
+				652D32DA1E6AEA26005CF7C3 /* TAXFREE-appUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		652D32BB1E6AEA26005CF7C3 /* TAXFREE-app */ = {
+			isa = PBXGroup;
+			children = (
+				652D32BC1E6AEA26005CF7C3 /* AppDelegate.swift */,
+				652D32BE1E6AEA26005CF7C3 /* MasterViewController.swift */,
+				652D32C01E6AEA26005CF7C3 /* DetailViewController.swift */,
+				652D32C21E6AEA26005CF7C3 /* Main.storyboard */,
+				652D32C51E6AEA26005CF7C3 /* Assets.xcassets */,
+				652D32C71E6AEA26005CF7C3 /* LaunchScreen.storyboard */,
+				652D32CA1E6AEA26005CF7C3 /* Info.plist */,
+			);
+			path = "TAXFREE-app";
+			sourceTree = "<group>";
+		};
+		652D32D21E6AEA26005CF7C3 /* TAXFREE-appTests */ = {
+			isa = PBXGroup;
+			children = (
+				652D32D31E6AEA26005CF7C3 /* TAXFREE_appTests.swift */,
+				652D32D51E6AEA26005CF7C3 /* Info.plist */,
+			);
+			path = "TAXFREE-appTests";
+			sourceTree = "<group>";
+		};
+		652D32DD1E6AEA26005CF7C3 /* TAXFREE-appUITests */ = {
+			isa = PBXGroup;
+			children = (
+				652D32DE1E6AEA26005CF7C3 /* TAXFREE_appUITests.swift */,
+				652D32E01E6AEA26005CF7C3 /* Info.plist */,
+			);
+			path = "TAXFREE-appUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		652D32B81E6AEA25005CF7C3 /* TAXFREE-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 652D32E31E6AEA26005CF7C3 /* Build configuration list for PBXNativeTarget "TAXFREE-app" */;
+			buildPhases = (
+				652D32B51E6AEA25005CF7C3 /* Sources */,
+				652D32B61E6AEA25005CF7C3 /* Frameworks */,
+				652D32B71E6AEA25005CF7C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TAXFREE-app";
+			productName = "TAXFREE-app";
+			productReference = 652D32B91E6AEA26005CF7C3 /* TAXFREE-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		652D32CE1E6AEA26005CF7C3 /* TAXFREE-appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 652D32E61E6AEA26005CF7C3 /* Build configuration list for PBXNativeTarget "TAXFREE-appTests" */;
+			buildPhases = (
+				652D32CB1E6AEA26005CF7C3 /* Sources */,
+				652D32CC1E6AEA26005CF7C3 /* Frameworks */,
+				652D32CD1E6AEA26005CF7C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				652D32D11E6AEA26005CF7C3 /* PBXTargetDependency */,
+			);
+			name = "TAXFREE-appTests";
+			productName = "TAXFREE-appTests";
+			productReference = 652D32CF1E6AEA26005CF7C3 /* TAXFREE-appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		652D32D91E6AEA26005CF7C3 /* TAXFREE-appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 652D32E91E6AEA26005CF7C3 /* Build configuration list for PBXNativeTarget "TAXFREE-appUITests" */;
+			buildPhases = (
+				652D32D61E6AEA26005CF7C3 /* Sources */,
+				652D32D71E6AEA26005CF7C3 /* Frameworks */,
+				652D32D81E6AEA26005CF7C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				652D32DC1E6AEA26005CF7C3 /* PBXTargetDependency */,
+			);
+			name = "TAXFREE-appUITests";
+			productName = "TAXFREE-appUITests";
+			productReference = 652D32DA1E6AEA26005CF7C3 /* TAXFREE-appUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		652D32B11E6AEA25005CF7C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Elżbieta Matus";
+				TargetAttributes = {
+					652D32B81E6AEA25005CF7C3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3VEE2K9525;
+						ProvisioningStyle = Automatic;
+					};
+					652D32CE1E6AEA26005CF7C3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3VEE2K9525;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 652D32B81E6AEA25005CF7C3;
+					};
+					652D32D91E6AEA26005CF7C3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3VEE2K9525;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 652D32B81E6AEA25005CF7C3;
+					};
+				};
+			};
+			buildConfigurationList = 652D32B41E6AEA25005CF7C3 /* Build configuration list for PBXProject "TAXFREE-app" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 652D32B01E6AEA25005CF7C3;
+			productRefGroup = 652D32BA1E6AEA26005CF7C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				652D32B81E6AEA25005CF7C3 /* TAXFREE-app */,
+				652D32CE1E6AEA26005CF7C3 /* TAXFREE-appTests */,
+				652D32D91E6AEA26005CF7C3 /* TAXFREE-appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		652D32B71E6AEA25005CF7C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652D32C91E6AEA26005CF7C3 /* LaunchScreen.storyboard in Resources */,
+				652D32C61E6AEA26005CF7C3 /* Assets.xcassets in Resources */,
+				652D32C41E6AEA26005CF7C3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652D32CD1E6AEA26005CF7C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652D32D81E6AEA26005CF7C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		652D32B51E6AEA25005CF7C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652D32C11E6AEA26005CF7C3 /* DetailViewController.swift in Sources */,
+				652D32BF1E6AEA26005CF7C3 /* MasterViewController.swift in Sources */,
+				652D32BD1E6AEA26005CF7C3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652D32CB1E6AEA26005CF7C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652D32D41E6AEA26005CF7C3 /* TAXFREE_appTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652D32D61E6AEA26005CF7C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652D32DF1E6AEA26005CF7C3 /* TAXFREE_appUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		652D32D11E6AEA26005CF7C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 652D32B81E6AEA25005CF7C3 /* TAXFREE-app */;
+			targetProxy = 652D32D01E6AEA26005CF7C3 /* PBXContainerItemProxy */;
+		};
+		652D32DC1E6AEA26005CF7C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 652D32B81E6AEA25005CF7C3 /* TAXFREE-app */;
+			targetProxy = 652D32DB1E6AEA26005CF7C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		652D32C21E6AEA26005CF7C3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				652D32C31E6AEA26005CF7C3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		652D32C71E6AEA26005CF7C3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				652D32C81E6AEA26005CF7C3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		652D32E11E6AEA26005CF7C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		652D32E21E6AEA26005CF7C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		652D32E41E6AEA26005CF7C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3VEE2K9525;
+				INFOPLIST_FILE = "TAXFREE-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.melastudio.TAXFREE-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		652D32E51E6AEA26005CF7C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3VEE2K9525;
+				INFOPLIST_FILE = "TAXFREE-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.melastudio.TAXFREE-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		652D32E71E6AEA26005CF7C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3VEE2K9525;
+				INFOPLIST_FILE = "TAXFREE-appTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.melastudio.TAXFREE-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TAXFREE-app.app/TAXFREE-app";
+			};
+			name = Debug;
+		};
+		652D32E81E6AEA26005CF7C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3VEE2K9525;
+				INFOPLIST_FILE = "TAXFREE-appTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.melastudio.TAXFREE-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TAXFREE-app.app/TAXFREE-app";
+			};
+			name = Release;
+		};
+		652D32EA1E6AEA26005CF7C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3VEE2K9525;
+				INFOPLIST_FILE = "TAXFREE-appUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.melastudio.TAXFREE-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "TAXFREE-app";
+			};
+			name = Debug;
+		};
+		652D32EB1E6AEA26005CF7C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3VEE2K9525;
+				INFOPLIST_FILE = "TAXFREE-appUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.melastudio.TAXFREE-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "TAXFREE-app";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		652D32B41E6AEA25005CF7C3 /* Build configuration list for PBXProject "TAXFREE-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				652D32E11E6AEA26005CF7C3 /* Debug */,
+				652D32E21E6AEA26005CF7C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		652D32E31E6AEA26005CF7C3 /* Build configuration list for PBXNativeTarget "TAXFREE-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				652D32E41E6AEA26005CF7C3 /* Debug */,
+				652D32E51E6AEA26005CF7C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		652D32E61E6AEA26005CF7C3 /* Build configuration list for PBXNativeTarget "TAXFREE-appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				652D32E71E6AEA26005CF7C3 /* Debug */,
+				652D32E81E6AEA26005CF7C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		652D32E91E6AEA26005CF7C3 /* Build configuration list for PBXNativeTarget "TAXFREE-appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				652D32EA1E6AEA26005CF7C3 /* Debug */,
+				652D32EB1E6AEA26005CF7C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 652D32B11E6AEA25005CF7C3 /* Project object */;
+}
