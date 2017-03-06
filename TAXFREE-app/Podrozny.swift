@@ -9,9 +9,14 @@
 import Foundation
 
 class Podrozny {
+    var imie:String?
+    var nazwisko:String?
+    var nrPaszportu:String?
+    
+    init(imie: String,nazwisko: String,nrPaszportu:String) {
+        self.imie = imie
+        self.nazwisko = nazwisko
+        self.nrPaszportu = nrPaszportu
+    }
+
 }
-
-
-//<xsd:element name="Imie" type="tp:TImie">
-//<xsd:element name="Nazwisko" type="tp:TNazwisko">
-//<xsd:element name="NrPaszportu" type="tp:TNrPaszportu">
