@@ -35,3 +35,9 @@ class Rachunek {
         self.opisAsortymentu=opisAsortymentu
     }
 }
+
+
+let pat = "\\b([a-z])\\.([a-z]{2,})@([a-z]+)\\.ac\\.uk\\b"
+let testStr = "x.wu@strath.ac.uk, ak123@hotmail.com     e1s59@oxford.ac.uk, ee123@cooleng.co.uk, a.khan@surrey.ac.uk"
+let regex = try! NSRegularExpression(pattern: pat, options: [])
+//let matches = regex.matches(testStr, options: [], range: NSRange(location: 0, length: testStr.characters.count))
