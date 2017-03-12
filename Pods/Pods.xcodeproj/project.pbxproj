@@ -1,0 +1,973 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00B6CD874CE9517CD1D0367C622B6D9B /* Pods-TAXFREE-app-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 752C3E7ECC04927CEFE7300431B12C96 /* Pods-TAXFREE-app-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00B8967CB60A2D00057F9DB1FCDF1203 /* UIViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABE102A51245203AB50246B6481E277 /* UIViewHelper.m */; };
+		0338FF6EA0E6B5AAB69A39E822A1584A /* MDCalendarHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEA19D83A0FF082FA40E1C68B051916 /* MDCalendarHeader.m */; };
+		06417BBBFD86F586296A11648EAA3D5F /* MDSliderTickMarksView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B53CA5617F7EAB8B3A4818E3527DAFF /* MDSliderTickMarksView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10073179FADBCEF72F4D6195FF76EE55 /* NSDate+MDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AD84F6FBD0E0117BF3BD5FF828BB1B12 /* NSDate+MDExtension.m */; };
+		142DD9EEC58ABF3FA9A7182A90D36001 /* UIView+MDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AE847B18BA3AAD44FFF803C6700697DB /* UIView+MDExtension.m */; };
+		15B001A4DC5D578B67B5E2845C3B314B /* MDTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B690BDF01724CF406C1C17713755AAC0 /* MDTableViewCell.m */; };
+		1B07462C8F858892F5B556FDAD63CF8B /* MDSuggestTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1163135E99B08098CE83F78A8BC1275B /* MDSuggestTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D4F70484D4DE869CA5936730417C057 /* MDCalendarHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F1DE5CF4A7FCCF9ECF92A910A62049AC /* MDCalendarHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D9D55E68C5484F3E7C683BDA2BEEA3B /* MDSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 0551F8B7F6305855E3CC69ABE8E808BA /* MDSwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DB9694D1A42469ADEECD24D082A1241 /* MDLinearProgressLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = C8EE6CFA95A3C34BAE8F24F9D7B220AF /* MDLinearProgressLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E064C2007EE48E72595461F6C88B8E5 /* NSCalendarHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 080A182F9D1E930EA5C8AC3896DE7CA6 /* NSCalendarHelper.m */; };
+		21947B49912615B6D57FBB548ED9DBA2 /* MDTimePickerDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = DA963B7AC23C16CC012C00290C49C01B /* MDTimePickerDialog.m */; };
+		2509A4CD2727F2EB7843EBFD07011003 /* Pods-TAXFREE-app-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FD46F3EA496A724DCE50B76EB2D5B5 /* Pods-TAXFREE-app-dummy.m */; };
+		25F087D6A16319DEB87BCFB1DCF25177 /* MDTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 128BC0882B202DF5B1B97A48892182DE /* MDTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27946AB58C6E1A88E52881B1FE1EEB51 /* MDTimePickerDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 69912AFACE9063FF93C71C63CBDD2E01 /* MDTimePickerDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CA51A7112C197CB3D5C07B0D0EEBD31 /* MaterialControls-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A31A354C0B6125C88CC73A2E66F1C03 /* MaterialControls-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F66EB07CE0E6B84754E7253D13D71B1 /* MDDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B27D13FCA7C6799213F90CCCBF05E94 /* MDDatePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33EC6A5B05A0AD22FCAB32F91913048E /* MDToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 173ED62D4D0E35E33DEEDD3B15015943 /* MDToast.m */; };
+		364F3A7CEC47F8B721BC3CF1E9F573E9 /* MDMathHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A375334B6AD0992FF6157382D532603D /* MDMathHelper.m */; };
+		365BF8F5A3037BF6A6C489C33D3017B5 /* MDProgressLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3231D5A3BEE51CE8A172251D6F782852 /* MDProgressLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38B222EC276883BD9A0D7BD0CBC2AB59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		3DE1608ABD4B0E08303AC1832CDE31CA /* NSDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CD8A66E6FD4B582CCAE8C7FD4CB50A /* NSDateHelper.m */; };
+		3E2977A1FC845CA7A1AA3B05DEFA5240 /* MDSuggestPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE64A85886553F15034FFA774E77AA34 /* MDSuggestPopupView.m */; };
+		407E39587B0591E76D5543DF749FFA28 /* MDTouchGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF746C2FD36D715BC974610D27931C0 /* MDTouchGestureRecognizer.m */; };
+		412F66FC3E515E83319746C39BE6AB1E /* MDToast.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F53D937F5623DD3D9F6E1EB2C1C6D9B /* MDToast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42EE5E95379E1D92F40100BF467C7D20 /* MDCircularProgressLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8671E8B0140D0F0284E760F497C85571 /* MDCircularProgressLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45D3BD6533E1DFBA8D1F40ED5AA67F55 /* MDCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = B36A959581028EB959A848720425D0F0 /* MDCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B5B2ABEF901EDEB8771DCC426FE9129 /* UIFontHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6886307B46D48BC3092993B7218B80F1 /* UIFontHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DC2EB44359BE59CAF10F25803E76F64 /* UIView+MDExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 222DD369AA7CCD094D40775BE913EB18 /* UIView+MDExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E6EC810EAB1FCBA535D807EA1284EBD /* MDSnackbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B43B100FFB03250B35AB05597C27D36 /* MDSnackbar.m */; };
+		54DB72D204BAF85D8F4899BABAB5F298 /* MDCalendarYearSelectorViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B1EC62A0B6ACC3CD17060B488C6E0A67 /* MDCalendarYearSelectorViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54EB079261D1508253A2FD2C68B779E5 /* MDCalendarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = FFE260277B253E8F3A6F60E1BA84EFCD /* MDCalendarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57A3B6DC67010A4FCF63BC7252BE2766 /* MDTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = FA95DF4C0C97918E57FAAB805E2F6474 /* MDTextField.m */; };
+		5FD227A7F30386751C4242C236B1B9B8 /* NSDate+MDExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = EBB295DC299226623F981D582A1F50BD /* NSDate+MDExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E608AC95EDB9A4C1453252BCA2F5D3B /* MDSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2013DFA90237EBA6B9A1E76B21335891 /* MDSwitch.m */; };
+		6FD24823286EAAB18AFD7390C0163A1D /* MDSliderThumbView.h in Headers */ = {isa = PBXBuildFile; fileRef = 826057657F0FDEE468E21BE0B7357E28 /* MDSliderThumbView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71B1908215862EE46A207767A0A44DAD /* MDCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = C133AB47CCB1B2C9DCA38AE933100657 /* MDCalendar.m */; };
+		73069F16EFBBD5745F24725A3964C505 /* MDButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B12289A66C647600FE7F4C9437C7D7 /* MDButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73738B8957578840708816BA1FA6C5D5 /* MDRippleLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = E7C46EB9A91F0B54EDD4C29BB1FF96F3 /* MDRippleLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73E5E9454B9D6DBB33F0D5D306FC3822 /* MDSliderTickMarksView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6274B55C3A970C04DB1B297C68C7D0 /* MDSliderTickMarksView.m */; };
+		752DDF2B0560834820CA32A981AF4FFC /* MDDatePickerDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 874168E02E6DA7DBB4AB8039C5F83DCF /* MDDatePickerDialog.m */; };
+		78AB1E3378EF27F3EF9C81E19EF2D278 /* MDDeviceHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = D04814B3D413479D6E741AA74C8BE721 /* MDDeviceHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		795A6ADE0FDD9EF6D52116C985C95CDE /* NSDateHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 10EA5FA8C58822CAC40AED30BCBB3272 /* NSDateHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B53D5E80E1D87201D0E91C143879D94 /* MDMathHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 70F684F6D11E72A437DFE0EAB6ED7151 /* MDMathHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C16194A33B339CBB4E8A76685D91227 /* AutoResizeTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8679AFA110BBE4655DCB6FCE279CC5 /* AutoResizeTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D007AF107CBBE6D7BFDB8351FB5CD88 /* MDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F628856884F3CEC2047E715150C5FB9D /* MDButton.m */; };
+		7FE34F629327008F241BA25C7ED30962 /* MDCircularProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 518A1951FD49DBB6547E087BEBFF37DA /* MDCircularProgressLayer.m */; };
+		812E0C9EB34D9EC26E15047882763DF0 /* MDRippleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DC95E85DB3F84855FA661D01FE30C61E /* MDRippleLayer.m */; };
+		84D4036B32DDF75D28083A5F3402E838 /* UIViewHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = A97C81FC175D88FC0236996437CC81C9 /* UIViewHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8594D30117FDA82F1C8E36FBC286D21E /* MDBubbleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 524BDCB6F5F338BCD80DAEF882A67595 /* MDBubbleLabel.m */; };
+		8D432496FAD8807F421385B803C88DAA /* MaterialControls-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A926C2D91C5C2D412AEA05C7D53017 /* MaterialControls-dummy.m */; };
+		932CD5B572E34595A6C31213B8F98FDF /* MaterialControls.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5DAF6A51CC99B6491CE5640587FDECD6 /* MaterialControls.bundle */; };
+		941C15A84D7D346B73A12E8397747866 /* MDTouchGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 41F74C63E0737C6CF268E5FD54615386 /* MDTouchGestureRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D21B58F0B390AD7FF6B6FE5E92650FD /* MDProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B7445BF7512855200D1C83278EFD531 /* MDProgressLayer.m */; };
+		A116C86622FA69D75091F5CA55BFBD5C /* MDTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C31EC42A6FE79AF12209CE3B05D7384 /* MDTabBar.m */; };
+		A40949CCB148C4BEDF7785F848C8AFAF /* MDTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A48F209F18047C6A0AD0E8A8CF8B597 /* MDTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4D481B6FA094D9574336B5194E25644 /* MDDatePickerDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 49CE13118836C589EFF5BE7D8FB9FE5E /* MDDatePickerDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A69F3FB6F324701F3D8259E4FA3DDD6A /* MDLinearProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C60684FBF869A8FCBCB251183B769F /* MDLinearProgressLayer.m */; };
+		AB45C31CDE2BBC254F2A4A25C757E04B /* MDProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 9201F26F34115340730969138677B06F /* MDProgress.m */; };
+		AEF8AD6D14738B0933FEC2BF5D590E14 /* MDSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 55E5C2284593972C4FC9C0ECA1F50449 /* MDSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5D85AF16F6FC98456903617D713B60B /* MDDeviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA8722D07736772747557B5B51C4546 /* MDDeviceHelper.m */; };
+		BB5833A9A3D0926FB6C7C5960B6E7D0D /* NSCalendarHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 31CB900B2DBE34631175E0A7A25BB4CA /* NSCalendarHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD153D02CE5987EA07886EB64DEF73F8 /* MDSliderThumbView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32571D816749B8EBEDB031F4C2DF719D /* MDSliderThumbView.m */; };
+		C48AE84F69331F9E5D4395030A458186 /* MDSliderIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = 447DA8FE5D4AA0139CFABF38129906BE /* MDSliderIcon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C59EFDA55C151C8F81275B8C470E3B8C /* MDSliderIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 724B39908B713E5E3A74036B0CE269FC /* MDSliderIcon.m */; };
+		C73FDB2F7FE825CD5CBC99866B6F61C6 /* MDCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D251E27AFC3D4D1B45CA8FDD90B73F0B /* MDCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7A3DE4F6316F07C3D7F11482E77F794 /* UIColorHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = E96A57FC9994F5B5E100649D66DE3189 /* UIColorHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CABF6619110C117A9E22AA1AE0A5E807 /* MDCalendarYearSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = FABD978A9964A95ABC3B4CDB3A989660 /* MDCalendarYearSelector.m */; };
+		CB4722261643BE6274BFC8365AA9A4E9 /* MDSuggestTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A898162668E05ADEE7A8A698725A59 /* MDSuggestTableView.m */; };
+		CCAC30B8E6CF0247FB4A2F3009864561 /* MDSuggestPopupView.h in Headers */ = {isa = PBXBuildFile; fileRef = BDE1272BEE5AA7FEC23FF6C59FDD08B7 /* MDSuggestPopupView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE3B7582FF1C21FA9569910D34EAD676 /* MDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75953D8E3FC5F9451BFABFF3F3E07DC4 /* MDCollectionViewCell.m */; };
+		CE8478FDA7ABE80CB9186D8E3F0B6665 /* MDCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E327B0F03F266A64D5CE539ED925F187 /* MDCalendarCell.m */; };
+		CF1F12323CFCBF8E07248F9BF4C25974 /* MDProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = C35438637774A847577B7EF5CE92A991 /* MDProgress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDB18C8A5935F38FC47FEAE282067E15 /* MDTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8271A35C2B9BD9819C9A36D63DD343C4 /* MDTabBarViewController.m */; };
+		E060A7A8547E1EC9C8D9F51FED5044B4 /* MDTabBarViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CC3D16C1888279F76050B22950589E1A /* MDTabBarViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1450AA4963164652A437E4C168A412A /* MDTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 76A3EBF81F8698D8FC9F0F186F54E545 /* MDTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2E511B079F5D51FE0BD2A64693935B6 /* UIColorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5E0755B3016D45F9D9B82CD656C2A9 /* UIColorHelper.m */; };
+		E46CFB489D2DDADBB1AA80BD0DF53681 /* MDBubbleLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 631540831F4933BC406177E101D5EE3A /* MDBubbleLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E659EEAE8731002EB040B53420801626 /* MDCalendarDateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 422E1A204E635E45B3F2BA011BB76424 /* MDCalendarDateHeader.m */; };
+		E82C06432CD5C258A557A0BC50C9A611 /* MDDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 56AE00C4BF6453AE0DAEC4F1524A717E /* MDDatePicker.m */; };
+		E8CA55F3184DF903F638C760E34485AB /* MDCalendarYearSelectorViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8FF939A5D31F66501C5D46E356D938 /* MDCalendarYearSelectorViewCell.m */; };
+		EAC4773AE3A627DDF22A2AD303B4ECA5 /* UIFontHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E1DC98138FFAEFC963E4A6D01A6E75 /* UIFontHelper.m */; };
+		EBCB871A1302DBC45BE2C22C699B9F23 /* MDSnackbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 255180DD3030F6DF186EB0ABD53CBF0C /* MDSnackbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED06FEFB3A1C9050740BAB74F0488B1D /* AutoResizeTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2016438AA12827C54C7BD2D59F5C39 /* AutoResizeTextView.m */; };
+		EE72C43C007B47B3100A86B724438002 /* MDConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A560BE7C1077D2F6EF1EC3C1A7E06E /* MDConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3EF2E95846EA330CB166C1DF05A8729 /* MDCalendarYearSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = 85840DDD49C13F4E9A1E232380579C8C /* MDCalendarYearSelector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F757203AB802F4D1D17EF6D7C8BEE4B8 /* MDCalendarDateHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = C7D2E0C55818F1F06703EAD70057E210 /* MDCalendarDateHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7A81D5552EABCA42AE89D7341228E40 /* MDSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 37037886B27A259970EAF06BFE6D54BF /* MDSlider.m */; };
+		FB7A48A0C42CE99E919AFA6BA1523B6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C586C186F5510FFF2E56855A8B59B17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE96D3CBC308262A639CF0C6ADA07132;
+			remoteInfo = "MaterialControls-MaterialControls";
+		};
+		3B85D4809F1F842E436CF67E92127BCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09E04E51439086A458FFB23F9B6CB274;
+			remoteInfo = MaterialControls;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00B12289A66C647600FE7F4C9437C7D7 /* MDButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDButton.h; path = iOSUILib/iOSUILib/MDButton.h; sourceTree = "<group>"; };
+		0551F8B7F6305855E3CC69ABE8E808BA /* MDSwitch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDSwitch.h; path = iOSUILib/iOSUILib/MDSwitch.h; sourceTree = "<group>"; };
+		080A182F9D1E930EA5C8AC3896DE7CA6 /* NSCalendarHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NSCalendarHelper.m; path = iOSUILib/iOSUILib/Calendar/NSCalendarHelper.m; sourceTree = "<group>"; };
+		10EA5FA8C58822CAC40AED30BCBB3272 /* NSDateHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NSDateHelper.h; path = iOSUILib/iOSUILib/Helpers/NSDateHelper.h; sourceTree = "<group>"; };
+		1163135E99B08098CE83F78A8BC1275B /* MDSuggestTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDSuggestTableView.h; path = iOSUILib/iOSUILib/SuggestPopup/MDSuggestTableView.h; sourceTree = "<group>"; };
+		116EBBF68D04ABA8AA4597B0B02ADF5B /* MaterialControls-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialControls-prefix.pch"; sourceTree = "<group>"; };
+		120D6322B57F1820CF390A60B87EB67F /* MaterialControls.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MaterialControls.modulemap; sourceTree = "<group>"; };
+		128BC0882B202DF5B1B97A48892182DE /* MDTabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDTabBar.h; path = iOSUILib/iOSUILib/MDTabBar.h; sourceTree = "<group>"; };
+		173ED62D4D0E35E33DEEDD3B15015943 /* MDToast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDToast.m; path = iOSUILib/iOSUILib/MDToast.m; sourceTree = "<group>"; };
+		1D2016438AA12827C54C7BD2D59F5C39 /* AutoResizeTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AutoResizeTextView.m; path = iOSUILib/iOSUILib/AutoResizeTextView.m; sourceTree = "<group>"; };
+		1F53D937F5623DD3D9F6E1EB2C1C6D9B /* MDToast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDToast.h; path = iOSUILib/iOSUILib/MDToast.h; sourceTree = "<group>"; };
+		2013DFA90237EBA6B9A1E76B21335891 /* MDSwitch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDSwitch.m; path = iOSUILib/iOSUILib/MDSwitch.m; sourceTree = "<group>"; };
+		222DD369AA7CCD094D40775BE913EB18 /* UIView+MDExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MDExtension.h"; path = "iOSUILib/iOSUILib/UIView+MDExtension.h"; sourceTree = "<group>"; };
+		255180DD3030F6DF186EB0ABD53CBF0C /* MDSnackbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDSnackbar.h; path = iOSUILib/iOSUILib/MDSnackbar.h; sourceTree = "<group>"; };
+		31CB900B2DBE34631175E0A7A25BB4CA /* NSCalendarHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NSCalendarHelper.h; path = iOSUILib/iOSUILib/Calendar/NSCalendarHelper.h; sourceTree = "<group>"; };
+		3231D5A3BEE51CE8A172251D6F782852 /* MDProgressLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDProgressLayer.h; path = iOSUILib/iOSUILib/Progress/MDProgressLayer.h; sourceTree = "<group>"; };
+		32571D816749B8EBEDB031F4C2DF719D /* MDSliderThumbView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDSliderThumbView.m; path = iOSUILib/iOSUILib/Slider/MDSliderThumbView.m; sourceTree = "<group>"; };
+		37037886B27A259970EAF06BFE6D54BF /* MDSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDSlider.m; path = iOSUILib/iOSUILib/MDSlider.m; sourceTree = "<group>"; };
+		3A48F209F18047C6A0AD0E8A8CF8B597 /* MDTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDTableViewCell.h; path = iOSUILib/iOSUILib/MDTableViewCell.h; sourceTree = "<group>"; };
+		3ABE102A51245203AB50246B6481E277 /* UIViewHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIViewHelper.m; path = iOSUILib/iOSUILib/Helpers/UIViewHelper.m; sourceTree = "<group>"; };
+		3B53CA5617F7EAB8B3A4818E3527DAFF /* MDSliderTickMarksView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDSliderTickMarksView.h; path = iOSUILib/iOSUILib/Slider/MDSliderTickMarksView.h; sourceTree = "<group>"; };
+		3EE347374229A0CFB6CB6EDBA3C56858 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41F74C63E0737C6CF268E5FD54615386 /* MDTouchGestureRecognizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDTouchGestureRecognizer.h; path = iOSUILib/iOSUILib/MDTouchGestureRecognizer.h; sourceTree = "<group>"; };
+		422E1A204E635E45B3F2BA011BB76424 /* MDCalendarDateHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCalendarDateHeader.m; path = iOSUILib/iOSUILib/Calendar/MDCalendarDateHeader.m; sourceTree = "<group>"; };
+		447DA8FE5D4AA0139CFABF38129906BE /* MDSliderIcon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDSliderIcon.h; path = iOSUILib/iOSUILib/Slider/MDSliderIcon.h; sourceTree = "<group>"; };
+		49CE13118836C589EFF5BE7D8FB9FE5E /* MDDatePickerDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDDatePickerDialog.h; path = iOSUILib/iOSUILib/Calendar/MDDatePickerDialog.h; sourceTree = "<group>"; };
+		4B43B100FFB03250B35AB05597C27D36 /* MDSnackbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDSnackbar.m; path = iOSUILib/iOSUILib/MDSnackbar.m; sourceTree = "<group>"; };
+		4CA8722D07736772747557B5B51C4546 /* MDDeviceHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDDeviceHelper.m; path = iOSUILib/iOSUILib/Helpers/MDDeviceHelper.m; sourceTree = "<group>"; };
+		505EE2E5FF48A452F13B2F3E06123AA3 /* Pods-TAXFREE-app-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TAXFREE-app-resources.sh"; sourceTree = "<group>"; };
+		518A1951FD49DBB6547E087BEBFF37DA /* MDCircularProgressLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCircularProgressLayer.m; path = iOSUILib/iOSUILib/Progress/MDCircularProgressLayer.m; sourceTree = "<group>"; };
+		524BDCB6F5F338BCD80DAEF882A67595 /* MDBubbleLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDBubbleLabel.m; path = iOSUILib/iOSUILib/Slider/MDBubbleLabel.m; sourceTree = "<group>"; };
+		54980381F4D2AE4B23FBC65D0528A5EE /* MaterialControls.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MaterialControls.xcconfig; sourceTree = "<group>"; };
+		55E5C2284593972C4FC9C0ECA1F50449 /* MDSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDSlider.h; path = iOSUILib/iOSUILib/MDSlider.h; sourceTree = "<group>"; };
+		56AE00C4BF6453AE0DAEC4F1524A717E /* MDDatePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDDatePicker.m; path = iOSUILib/iOSUILib/Calendar/MDDatePicker.m; sourceTree = "<group>"; };
+		5B27D13FCA7C6799213F90CCCBF05E94 /* MDDatePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDDatePicker.h; path = iOSUILib/iOSUILib/Calendar/MDDatePicker.h; sourceTree = "<group>"; };
+		5B7445BF7512855200D1C83278EFD531 /* MDProgressLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDProgressLayer.m; path = iOSUILib/iOSUILib/Progress/MDProgressLayer.m; sourceTree = "<group>"; };
+		5DAF6A51CC99B6491CE5640587FDECD6 /* MaterialControls.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MaterialControls.bundle; path = MaterialControls.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		631540831F4933BC406177E101D5EE3A /* MDBubbleLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDBubbleLabel.h; path = iOSUILib/iOSUILib/Slider/MDBubbleLabel.h; sourceTree = "<group>"; };
+		6886307B46D48BC3092993B7218B80F1 /* UIFontHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIFontHelper.h; path = iOSUILib/iOSUILib/Helpers/UIFontHelper.h; sourceTree = "<group>"; };
+		69912AFACE9063FF93C71C63CBDD2E01 /* MDTimePickerDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDTimePickerDialog.h; path = iOSUILib/iOSUILib/Calendar/MDTimePickerDialog.h; sourceTree = "<group>"; };
+		6CC047EF03F46F9F4659430A7B4EF836 /* Pods-TAXFREE-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TAXFREE-app.debug.xcconfig"; sourceTree = "<group>"; };
+		6FF746C2FD36D715BC974610D27931C0 /* MDTouchGestureRecognizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDTouchGestureRecognizer.m; path = iOSUILib/iOSUILib/MDTouchGestureRecognizer.m; sourceTree = "<group>"; };
+		70F684F6D11E72A437DFE0EAB6ED7151 /* MDMathHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDMathHelper.h; path = iOSUILib/iOSUILib/Helpers/MDMathHelper.h; sourceTree = "<group>"; };
+		724B39908B713E5E3A74036B0CE269FC /* MDSliderIcon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDSliderIcon.m; path = iOSUILib/iOSUILib/Slider/MDSliderIcon.m; sourceTree = "<group>"; };
+		752C3E7ECC04927CEFE7300431B12C96 /* Pods-TAXFREE-app-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TAXFREE-app-umbrella.h"; sourceTree = "<group>"; };
+		75953D8E3FC5F9451BFABFF3F3E07DC4 /* MDCollectionViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCollectionViewCell.m; path = iOSUILib/iOSUILib/MDCollectionViewCell.m; sourceTree = "<group>"; };
+		76A3EBF81F8698D8FC9F0F186F54E545 /* MDTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDTextField.h; path = iOSUILib/iOSUILib/MDTextField.h; sourceTree = "<group>"; };
+		7A537B9DC4A112DB881F596DCFF4C824 /* MaterialControls.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MaterialControls.framework; path = MaterialControls.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C06502AEDAF9FBDEB72142D1FF24653 /* Pods_TAXFREE_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TAXFREE_app.framework; path = "Pods-TAXFREE-app.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		826057657F0FDEE468E21BE0B7357E28 /* MDSliderThumbView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDSliderThumbView.h; path = iOSUILib/iOSUILib/Slider/MDSliderThumbView.h; sourceTree = "<group>"; };
+		8271A35C2B9BD9819C9A36D63DD343C4 /* MDTabBarViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDTabBarViewController.m; path = iOSUILib/iOSUILib/MDTabBarViewController.m; sourceTree = "<group>"; };
+		827F3B2F344A378F8ED9DFEE929AB671 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85840DDD49C13F4E9A1E232380579C8C /* MDCalendarYearSelector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCalendarYearSelector.h; path = iOSUILib/iOSUILib/Calendar/MDCalendarYearSelector.h; sourceTree = "<group>"; };
+		8671E8B0140D0F0284E760F497C85571 /* MDCircularProgressLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCircularProgressLayer.h; path = iOSUILib/iOSUILib/Progress/MDCircularProgressLayer.h; sourceTree = "<group>"; };
+		874168E02E6DA7DBB4AB8039C5F83DCF /* MDDatePickerDialog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDDatePickerDialog.m; path = iOSUILib/iOSUILib/Calendar/MDDatePickerDialog.m; sourceTree = "<group>"; };
+		89C60684FBF869A8FCBCB251183B769F /* MDLinearProgressLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDLinearProgressLayer.m; path = iOSUILib/iOSUILib/Progress/MDLinearProgressLayer.m; sourceTree = "<group>"; };
+		8A31A354C0B6125C88CC73A2E66F1C03 /* MaterialControls-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialControls-umbrella.h"; sourceTree = "<group>"; };
+		8A5DB886C0E6EB064E1FC23BE9A9C1B7 /* Pods-TAXFREE-app-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TAXFREE-app-acknowledgements.plist"; sourceTree = "<group>"; };
+		8C31EC42A6FE79AF12209CE3B05D7384 /* MDTabBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDTabBar.m; path = iOSUILib/iOSUILib/MDTabBar.m; sourceTree = "<group>"; };
+		8F1BAC5673DDB7C95FA241E8964EB5DE /* Pods-TAXFREE-app.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TAXFREE-app.modulemap"; sourceTree = "<group>"; };
+		9201F26F34115340730969138677B06F /* MDProgress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDProgress.m; path = iOSUILib/iOSUILib/MDProgress.m; sourceTree = "<group>"; };
+		92FD46F3EA496A724DCE50B76EB2D5B5 /* Pods-TAXFREE-app-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TAXFREE-app-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		992D0444105262685E00DA8924B4902A /* ResourceBundle-MaterialControls-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-MaterialControls-Info.plist"; sourceTree = "<group>"; };
+		A375334B6AD0992FF6157382D532603D /* MDMathHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDMathHelper.m; path = iOSUILib/iOSUILib/Helpers/MDMathHelper.m; sourceTree = "<group>"; };
+		A97C81FC175D88FC0236996437CC81C9 /* UIViewHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIViewHelper.h; path = iOSUILib/iOSUILib/Helpers/UIViewHelper.h; sourceTree = "<group>"; };
+		AD84F6FBD0E0117BF3BD5FF828BB1B12 /* NSDate+MDExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+MDExtension.m"; path = "iOSUILib/iOSUILib/Calendar/NSDate+MDExtension.m"; sourceTree = "<group>"; };
+		AE847B18BA3AAD44FFF803C6700697DB /* UIView+MDExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MDExtension.m"; path = "iOSUILib/iOSUILib/UIView+MDExtension.m"; sourceTree = "<group>"; };
+		B1EC62A0B6ACC3CD17060B488C6E0A67 /* MDCalendarYearSelectorViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCalendarYearSelectorViewCell.h; path = iOSUILib/iOSUILib/Calendar/MDCalendarYearSelectorViewCell.h; sourceTree = "<group>"; };
+		B36A959581028EB959A848720425D0F0 /* MDCalendar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCalendar.h; path = iOSUILib/iOSUILib/Calendar/MDCalendar.h; sourceTree = "<group>"; };
+		B690BDF01724CF406C1C17713755AAC0 /* MDTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDTableViewCell.m; path = iOSUILib/iOSUILib/MDTableViewCell.m; sourceTree = "<group>"; };
+		B6A898162668E05ADEE7A8A698725A59 /* MDSuggestTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDSuggestTableView.m; path = iOSUILib/iOSUILib/SuggestPopup/MDSuggestTableView.m; sourceTree = "<group>"; };
+		BDE1272BEE5AA7FEC23FF6C59FDD08B7 /* MDSuggestPopupView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDSuggestPopupView.h; path = iOSUILib/iOSUILib/SuggestPopup/MDSuggestPopupView.h; sourceTree = "<group>"; };
+		BE64A85886553F15034FFA774E77AA34 /* MDSuggestPopupView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDSuggestPopupView.m; path = iOSUILib/iOSUILib/SuggestPopup/MDSuggestPopupView.m; sourceTree = "<group>"; };
+		C133AB47CCB1B2C9DCA38AE933100657 /* MDCalendar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCalendar.m; path = iOSUILib/iOSUILib/Calendar/MDCalendar.m; sourceTree = "<group>"; };
+		C35438637774A847577B7EF5CE92A991 /* MDProgress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDProgress.h; path = iOSUILib/iOSUILib/MDProgress.h; sourceTree = "<group>"; };
+		C3BFDA0C3E69EB99B49C29EFDDFBE837 /* Pods-TAXFREE-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TAXFREE-app.release.xcconfig"; sourceTree = "<group>"; };
+		C7D2E0C55818F1F06703EAD70057E210 /* MDCalendarDateHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCalendarDateHeader.h; path = iOSUILib/iOSUILib/Calendar/MDCalendarDateHeader.h; sourceTree = "<group>"; };
+		C8EE6CFA95A3C34BAE8F24F9D7B220AF /* MDLinearProgressLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDLinearProgressLayer.h; path = iOSUILib/iOSUILib/Progress/MDLinearProgressLayer.h; sourceTree = "<group>"; };
+		CA5E0755B3016D45F9D9B82CD656C2A9 /* UIColorHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIColorHelper.m; path = iOSUILib/iOSUILib/Helpers/UIColorHelper.m; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CC3D16C1888279F76050B22950589E1A /* MDTabBarViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDTabBarViewController.h; path = iOSUILib/iOSUILib/MDTabBarViewController.h; sourceTree = "<group>"; };
+		CC8FF939A5D31F66501C5D46E356D938 /* MDCalendarYearSelectorViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCalendarYearSelectorViewCell.m; path = iOSUILib/iOSUILib/Calendar/MDCalendarYearSelectorViewCell.m; sourceTree = "<group>"; };
+		CCEA19D83A0FF082FA40E1C68B051916 /* MDCalendarHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCalendarHeader.m; path = iOSUILib/iOSUILib/Calendar/MDCalendarHeader.m; sourceTree = "<group>"; };
+		CE8679AFA110BBE4655DCB6FCE279CC5 /* AutoResizeTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AutoResizeTextView.h; path = iOSUILib/iOSUILib/AutoResizeTextView.h; sourceTree = "<group>"; };
+		D04814B3D413479D6E741AA74C8BE721 /* MDDeviceHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDDeviceHelper.h; path = iOSUILib/iOSUILib/Helpers/MDDeviceHelper.h; sourceTree = "<group>"; };
+		D251E27AFC3D4D1B45CA8FDD90B73F0B /* MDCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCollectionViewCell.h; path = iOSUILib/iOSUILib/MDCollectionViewCell.h; sourceTree = "<group>"; };
+		D7A560BE7C1077D2F6EF1EC3C1A7E06E /* MDConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDConstants.h; path = iOSUILib/iOSUILib/MDConstants.h; sourceTree = "<group>"; };
+		DA963B7AC23C16CC012C00290C49C01B /* MDTimePickerDialog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDTimePickerDialog.m; path = iOSUILib/iOSUILib/Calendar/MDTimePickerDialog.m; sourceTree = "<group>"; };
+		DC95E85DB3F84855FA661D01FE30C61E /* MDRippleLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDRippleLayer.m; path = iOSUILib/iOSUILib/MDRippleLayer.m; sourceTree = "<group>"; };
+		E327B0F03F266A64D5CE539ED925F187 /* MDCalendarCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCalendarCell.m; path = iOSUILib/iOSUILib/Calendar/MDCalendarCell.m; sourceTree = "<group>"; };
+		E7C46EB9A91F0B54EDD4C29BB1FF96F3 /* MDRippleLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDRippleLayer.h; path = iOSUILib/iOSUILib/MDRippleLayer.h; sourceTree = "<group>"; };
+		E96A57FC9994F5B5E100649D66DE3189 /* UIColorHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIColorHelper.h; path = iOSUILib/iOSUILib/Helpers/UIColorHelper.h; sourceTree = "<group>"; };
+		EB6274B55C3A970C04DB1B297C68C7D0 /* MDSliderTickMarksView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDSliderTickMarksView.m; path = iOSUILib/iOSUILib/Slider/MDSliderTickMarksView.m; sourceTree = "<group>"; };
+		EBB295DC299226623F981D582A1F50BD /* NSDate+MDExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+MDExtension.h"; path = "iOSUILib/iOSUILib/Calendar/NSDate+MDExtension.h"; sourceTree = "<group>"; };
+		EC74ACF2A7372E6E31034DB4BCBA2862 /* Pods-TAXFREE-app-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TAXFREE-app-frameworks.sh"; sourceTree = "<group>"; };
+		F1DE5CF4A7FCCF9ECF92A910A62049AC /* MDCalendarHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCalendarHeader.h; path = iOSUILib/iOSUILib/Calendar/MDCalendarHeader.h; sourceTree = "<group>"; };
+		F2E1DC98138FFAEFC963E4A6D01A6E75 /* UIFontHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIFontHelper.m; path = iOSUILib/iOSUILib/Helpers/UIFontHelper.m; sourceTree = "<group>"; };
+		F3A926C2D91C5C2D412AEA05C7D53017 /* MaterialControls-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MaterialControls-dummy.m"; sourceTree = "<group>"; };
+		F628856884F3CEC2047E715150C5FB9D /* MDButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDButton.m; path = iOSUILib/iOSUILib/MDButton.m; sourceTree = "<group>"; };
+		F6CD8A66E6FD4B582CCAE8C7FD4CB50A /* NSDateHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NSDateHelper.m; path = iOSUILib/iOSUILib/Helpers/NSDateHelper.m; sourceTree = "<group>"; };
+		FA95DF4C0C97918E57FAAB805E2F6474 /* MDTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDTextField.m; path = iOSUILib/iOSUILib/MDTextField.m; sourceTree = "<group>"; };
+		FABD978A9964A95ABC3B4CDB3A989660 /* MDCalendarYearSelector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCalendarYearSelector.m; path = iOSUILib/iOSUILib/Calendar/MDCalendarYearSelector.m; sourceTree = "<group>"; };
+		FD1B1018FEC1DAFB9F699BD89F2045E1 /* Pods-TAXFREE-app-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TAXFREE-app-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FFE260277B253E8F3A6F60E1BA84EFCD /* MDCalendarCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCalendarCell.h; path = iOSUILib/iOSUILib/Calendar/MDCalendarCell.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AF5CD38781CF0DEAD07CEEC554354C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB7A48A0C42CE99E919AFA6BA1523B6E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97692899D726C51338173ED290B81DD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA4D4A7389D6BBC5266678FA436E7F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38B222EC276883BD9A0D7BD0CBC2AB59 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4083C47230D3A1464DE822EF119A3F3A /* MaterialControls */ = {
+			isa = PBXGroup;
+			children = (
+				CE8679AFA110BBE4655DCB6FCE279CC5 /* AutoResizeTextView.h */,
+				1D2016438AA12827C54C7BD2D59F5C39 /* AutoResizeTextView.m */,
+				631540831F4933BC406177E101D5EE3A /* MDBubbleLabel.h */,
+				524BDCB6F5F338BCD80DAEF882A67595 /* MDBubbleLabel.m */,
+				00B12289A66C647600FE7F4C9437C7D7 /* MDButton.h */,
+				F628856884F3CEC2047E715150C5FB9D /* MDButton.m */,
+				B36A959581028EB959A848720425D0F0 /* MDCalendar.h */,
+				C133AB47CCB1B2C9DCA38AE933100657 /* MDCalendar.m */,
+				FFE260277B253E8F3A6F60E1BA84EFCD /* MDCalendarCell.h */,
+				E327B0F03F266A64D5CE539ED925F187 /* MDCalendarCell.m */,
+				C7D2E0C55818F1F06703EAD70057E210 /* MDCalendarDateHeader.h */,
+				422E1A204E635E45B3F2BA011BB76424 /* MDCalendarDateHeader.m */,
+				F1DE5CF4A7FCCF9ECF92A910A62049AC /* MDCalendarHeader.h */,
+				CCEA19D83A0FF082FA40E1C68B051916 /* MDCalendarHeader.m */,
+				85840DDD49C13F4E9A1E232380579C8C /* MDCalendarYearSelector.h */,
+				FABD978A9964A95ABC3B4CDB3A989660 /* MDCalendarYearSelector.m */,
+				B1EC62A0B6ACC3CD17060B488C6E0A67 /* MDCalendarYearSelectorViewCell.h */,
+				CC8FF939A5D31F66501C5D46E356D938 /* MDCalendarYearSelectorViewCell.m */,
+				8671E8B0140D0F0284E760F497C85571 /* MDCircularProgressLayer.h */,
+				518A1951FD49DBB6547E087BEBFF37DA /* MDCircularProgressLayer.m */,
+				D251E27AFC3D4D1B45CA8FDD90B73F0B /* MDCollectionViewCell.h */,
+				75953D8E3FC5F9451BFABFF3F3E07DC4 /* MDCollectionViewCell.m */,
+				D7A560BE7C1077D2F6EF1EC3C1A7E06E /* MDConstants.h */,
+				5B27D13FCA7C6799213F90CCCBF05E94 /* MDDatePicker.h */,
+				56AE00C4BF6453AE0DAEC4F1524A717E /* MDDatePicker.m */,
+				49CE13118836C589EFF5BE7D8FB9FE5E /* MDDatePickerDialog.h */,
+				874168E02E6DA7DBB4AB8039C5F83DCF /* MDDatePickerDialog.m */,
+				D04814B3D413479D6E741AA74C8BE721 /* MDDeviceHelper.h */,
+				4CA8722D07736772747557B5B51C4546 /* MDDeviceHelper.m */,
+				C8EE6CFA95A3C34BAE8F24F9D7B220AF /* MDLinearProgressLayer.h */,
+				89C60684FBF869A8FCBCB251183B769F /* MDLinearProgressLayer.m */,
+				70F684F6D11E72A437DFE0EAB6ED7151 /* MDMathHelper.h */,
+				A375334B6AD0992FF6157382D532603D /* MDMathHelper.m */,
+				C35438637774A847577B7EF5CE92A991 /* MDProgress.h */,
+				9201F26F34115340730969138677B06F /* MDProgress.m */,
+				3231D5A3BEE51CE8A172251D6F782852 /* MDProgressLayer.h */,
+				5B7445BF7512855200D1C83278EFD531 /* MDProgressLayer.m */,
+				E7C46EB9A91F0B54EDD4C29BB1FF96F3 /* MDRippleLayer.h */,
+				DC95E85DB3F84855FA661D01FE30C61E /* MDRippleLayer.m */,
+				55E5C2284593972C4FC9C0ECA1F50449 /* MDSlider.h */,
+				37037886B27A259970EAF06BFE6D54BF /* MDSlider.m */,
+				447DA8FE5D4AA0139CFABF38129906BE /* MDSliderIcon.h */,
+				724B39908B713E5E3A74036B0CE269FC /* MDSliderIcon.m */,
+				826057657F0FDEE468E21BE0B7357E28 /* MDSliderThumbView.h */,
+				32571D816749B8EBEDB031F4C2DF719D /* MDSliderThumbView.m */,
+				3B53CA5617F7EAB8B3A4818E3527DAFF /* MDSliderTickMarksView.h */,
+				EB6274B55C3A970C04DB1B297C68C7D0 /* MDSliderTickMarksView.m */,
+				255180DD3030F6DF186EB0ABD53CBF0C /* MDSnackbar.h */,
+				4B43B100FFB03250B35AB05597C27D36 /* MDSnackbar.m */,
+				BDE1272BEE5AA7FEC23FF6C59FDD08B7 /* MDSuggestPopupView.h */,
+				BE64A85886553F15034FFA774E77AA34 /* MDSuggestPopupView.m */,
+				1163135E99B08098CE83F78A8BC1275B /* MDSuggestTableView.h */,
+				B6A898162668E05ADEE7A8A698725A59 /* MDSuggestTableView.m */,
+				0551F8B7F6305855E3CC69ABE8E808BA /* MDSwitch.h */,
+				2013DFA90237EBA6B9A1E76B21335891 /* MDSwitch.m */,
+				128BC0882B202DF5B1B97A48892182DE /* MDTabBar.h */,
+				8C31EC42A6FE79AF12209CE3B05D7384 /* MDTabBar.m */,
+				CC3D16C1888279F76050B22950589E1A /* MDTabBarViewController.h */,
+				8271A35C2B9BD9819C9A36D63DD343C4 /* MDTabBarViewController.m */,
+				3A48F209F18047C6A0AD0E8A8CF8B597 /* MDTableViewCell.h */,
+				B690BDF01724CF406C1C17713755AAC0 /* MDTableViewCell.m */,
+				76A3EBF81F8698D8FC9F0F186F54E545 /* MDTextField.h */,
+				FA95DF4C0C97918E57FAAB805E2F6474 /* MDTextField.m */,
+				69912AFACE9063FF93C71C63CBDD2E01 /* MDTimePickerDialog.h */,
+				DA963B7AC23C16CC012C00290C49C01B /* MDTimePickerDialog.m */,
+				1F53D937F5623DD3D9F6E1EB2C1C6D9B /* MDToast.h */,
+				173ED62D4D0E35E33DEEDD3B15015943 /* MDToast.m */,
+				41F74C63E0737C6CF268E5FD54615386 /* MDTouchGestureRecognizer.h */,
+				6FF746C2FD36D715BC974610D27931C0 /* MDTouchGestureRecognizer.m */,
+				31CB900B2DBE34631175E0A7A25BB4CA /* NSCalendarHelper.h */,
+				080A182F9D1E930EA5C8AC3896DE7CA6 /* NSCalendarHelper.m */,
+				EBB295DC299226623F981D582A1F50BD /* NSDate+MDExtension.h */,
+				AD84F6FBD0E0117BF3BD5FF828BB1B12 /* NSDate+MDExtension.m */,
+				10EA5FA8C58822CAC40AED30BCBB3272 /* NSDateHelper.h */,
+				F6CD8A66E6FD4B582CCAE8C7FD4CB50A /* NSDateHelper.m */,
+				E96A57FC9994F5B5E100649D66DE3189 /* UIColorHelper.h */,
+				CA5E0755B3016D45F9D9B82CD656C2A9 /* UIColorHelper.m */,
+				6886307B46D48BC3092993B7218B80F1 /* UIFontHelper.h */,
+				F2E1DC98138FFAEFC963E4A6D01A6E75 /* UIFontHelper.m */,
+				222DD369AA7CCD094D40775BE913EB18 /* UIView+MDExtension.h */,
+				AE847B18BA3AAD44FFF803C6700697DB /* UIView+MDExtension.m */,
+				A97C81FC175D88FC0236996437CC81C9 /* UIViewHelper.h */,
+				3ABE102A51245203AB50246B6481E277 /* UIViewHelper.m */,
+				8CB7EA5A621F810A12DEFC64CD59E35B /* Support Files */,
+			);
+			name = MaterialControls;
+			path = MaterialControls;
+			sourceTree = "<group>";
+		};
+		602D21F9F4DD67DB9D71FC70BF20A6A5 /* Pods-TAXFREE-app */ = {
+			isa = PBXGroup;
+			children = (
+				827F3B2F344A378F8ED9DFEE929AB671 /* Info.plist */,
+				8F1BAC5673DDB7C95FA241E8964EB5DE /* Pods-TAXFREE-app.modulemap */,
+				FD1B1018FEC1DAFB9F699BD89F2045E1 /* Pods-TAXFREE-app-acknowledgements.markdown */,
+				8A5DB886C0E6EB064E1FC23BE9A9C1B7 /* Pods-TAXFREE-app-acknowledgements.plist */,
+				92FD46F3EA496A724DCE50B76EB2D5B5 /* Pods-TAXFREE-app-dummy.m */,
+				EC74ACF2A7372E6E31034DB4BCBA2862 /* Pods-TAXFREE-app-frameworks.sh */,
+				505EE2E5FF48A452F13B2F3E06123AA3 /* Pods-TAXFREE-app-resources.sh */,
+				752C3E7ECC04927CEFE7300431B12C96 /* Pods-TAXFREE-app-umbrella.h */,
+				6CC047EF03F46F9F4659430A7B4EF836 /* Pods-TAXFREE-app.debug.xcconfig */,
+				C3BFDA0C3E69EB99B49C29EFDDFBE837 /* Pods-TAXFREE-app.release.xcconfig */,
+			);
+			name = "Pods-TAXFREE-app";
+			path = "Target Support Files/Pods-TAXFREE-app";
+			sourceTree = "<group>";
+		};
+		6B25FD1D76CC87A0625FF71EE46C1F5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DAF6A51CC99B6491CE5640587FDECD6 /* MaterialControls.bundle */,
+				7A537B9DC4A112DB881F596DCFF4C824 /* MaterialControls.framework */,
+				7C06502AEDAF9FBDEB72142D1FF24653 /* Pods_TAXFREE_app.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				918F6B0B3583214CE85B835317C13D09 /* Pods */,
+				6B25FD1D76CC87A0625FF71EE46C1F5F /* Products */,
+				8B6D2EBCC849A7C1CF9527A09D35F07F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8B6D2EBCC849A7C1CF9527A09D35F07F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				602D21F9F4DD67DB9D71FC70BF20A6A5 /* Pods-TAXFREE-app */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8CB7EA5A621F810A12DEFC64CD59E35B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3EE347374229A0CFB6CB6EDBA3C56858 /* Info.plist */,
+				120D6322B57F1820CF390A60B87EB67F /* MaterialControls.modulemap */,
+				54980381F4D2AE4B23FBC65D0528A5EE /* MaterialControls.xcconfig */,
+				F3A926C2D91C5C2D412AEA05C7D53017 /* MaterialControls-dummy.m */,
+				116EBBF68D04ABA8AA4597B0B02ADF5B /* MaterialControls-prefix.pch */,
+				8A31A354C0B6125C88CC73A2E66F1C03 /* MaterialControls-umbrella.h */,
+				992D0444105262685E00DA8924B4902A /* ResourceBundle-MaterialControls-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MaterialControls";
+			sourceTree = "<group>";
+		};
+		918F6B0B3583214CE85B835317C13D09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4083C47230D3A1464DE822EF119A3F3A /* MaterialControls */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2B081AFD4F0CD49091756C7414DB3124 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00B6CD874CE9517CD1D0367C622B6D9B /* Pods-TAXFREE-app-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF5F8FB5806F17FFC05C77E76712B03 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C16194A33B339CBB4E8A76685D91227 /* AutoResizeTextView.h in Headers */,
+				2CA51A7112C197CB3D5C07B0D0EEBD31 /* MaterialControls-umbrella.h in Headers */,
+				E46CFB489D2DDADBB1AA80BD0DF53681 /* MDBubbleLabel.h in Headers */,
+				73069F16EFBBD5745F24725A3964C505 /* MDButton.h in Headers */,
+				45D3BD6533E1DFBA8D1F40ED5AA67F55 /* MDCalendar.h in Headers */,
+				54EB079261D1508253A2FD2C68B779E5 /* MDCalendarCell.h in Headers */,
+				F757203AB802F4D1D17EF6D7C8BEE4B8 /* MDCalendarDateHeader.h in Headers */,
+				1D4F70484D4DE869CA5936730417C057 /* MDCalendarHeader.h in Headers */,
+				F3EF2E95846EA330CB166C1DF05A8729 /* MDCalendarYearSelector.h in Headers */,
+				54DB72D204BAF85D8F4899BABAB5F298 /* MDCalendarYearSelectorViewCell.h in Headers */,
+				42EE5E95379E1D92F40100BF467C7D20 /* MDCircularProgressLayer.h in Headers */,
+				C73FDB2F7FE825CD5CBC99866B6F61C6 /* MDCollectionViewCell.h in Headers */,
+				EE72C43C007B47B3100A86B724438002 /* MDConstants.h in Headers */,
+				2F66EB07CE0E6B84754E7253D13D71B1 /* MDDatePicker.h in Headers */,
+				A4D481B6FA094D9574336B5194E25644 /* MDDatePickerDialog.h in Headers */,
+				78AB1E3378EF27F3EF9C81E19EF2D278 /* MDDeviceHelper.h in Headers */,
+				1DB9694D1A42469ADEECD24D082A1241 /* MDLinearProgressLayer.h in Headers */,
+				7B53D5E80E1D87201D0E91C143879D94 /* MDMathHelper.h in Headers */,
+				CF1F12323CFCBF8E07248F9BF4C25974 /* MDProgress.h in Headers */,
+				365BF8F5A3037BF6A6C489C33D3017B5 /* MDProgressLayer.h in Headers */,
+				73738B8957578840708816BA1FA6C5D5 /* MDRippleLayer.h in Headers */,
+				AEF8AD6D14738B0933FEC2BF5D590E14 /* MDSlider.h in Headers */,
+				C48AE84F69331F9E5D4395030A458186 /* MDSliderIcon.h in Headers */,
+				6FD24823286EAAB18AFD7390C0163A1D /* MDSliderThumbView.h in Headers */,
+				06417BBBFD86F586296A11648EAA3D5F /* MDSliderTickMarksView.h in Headers */,
+				EBCB871A1302DBC45BE2C22C699B9F23 /* MDSnackbar.h in Headers */,
+				CCAC30B8E6CF0247FB4A2F3009864561 /* MDSuggestPopupView.h in Headers */,
+				1B07462C8F858892F5B556FDAD63CF8B /* MDSuggestTableView.h in Headers */,
+				1D9D55E68C5484F3E7C683BDA2BEEA3B /* MDSwitch.h in Headers */,
+				25F087D6A16319DEB87BCFB1DCF25177 /* MDTabBar.h in Headers */,
+				E060A7A8547E1EC9C8D9F51FED5044B4 /* MDTabBarViewController.h in Headers */,
+				A40949CCB148C4BEDF7785F848C8AFAF /* MDTableViewCell.h in Headers */,
+				E1450AA4963164652A437E4C168A412A /* MDTextField.h in Headers */,
+				27946AB58C6E1A88E52881B1FE1EEB51 /* MDTimePickerDialog.h in Headers */,
+				412F66FC3E515E83319746C39BE6AB1E /* MDToast.h in Headers */,
+				941C15A84D7D346B73A12E8397747866 /* MDTouchGestureRecognizer.h in Headers */,
+				BB5833A9A3D0926FB6C7C5960B6E7D0D /* NSCalendarHelper.h in Headers */,
+				5FD227A7F30386751C4242C236B1B9B8 /* NSDate+MDExtension.h in Headers */,
+				795A6ADE0FDD9EF6D52116C985C95CDE /* NSDateHelper.h in Headers */,
+				C7A3DE4F6316F07C3D7F11482E77F794 /* UIColorHelper.h in Headers */,
+				4B5B2ABEF901EDEB8771DCC426FE9129 /* UIFontHelper.h in Headers */,
+				4DC2EB44359BE59CAF10F25803E76F64 /* UIView+MDExtension.h in Headers */,
+				84D4036B32DDF75D28083A5F3402E838 /* UIViewHelper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		09E04E51439086A458FFB23F9B6CB274 /* MaterialControls */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D148C36CC184D3207249F2DF0591929 /* Build configuration list for PBXNativeTarget "MaterialControls" */;
+			buildPhases = (
+				196CA4836DE1CE6C82A039272C342C85 /* Sources */,
+				BCA4D4A7389D6BBC5266678FA436E7F1 /* Frameworks */,
+				8CB9BC1AF21C640DBFDAB0CE95147284 /* Resources */,
+				2CF5F8FB5806F17FFC05C77E76712B03 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA544C74037D68C124354D1C258F0409 /* PBXTargetDependency */,
+			);
+			name = MaterialControls;
+			productName = MaterialControls;
+			productReference = 7A537B9DC4A112DB881F596DCFF4C824 /* MaterialControls.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		56EEFA047BEF71B882D2EA968C14F4F5 /* Pods-TAXFREE-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00F2EE458CA4EE22E077F4F235B228F6 /* Build configuration list for PBXNativeTarget "Pods-TAXFREE-app" */;
+			buildPhases = (
+				974325B58D7B19C9857180A515DCC372 /* Sources */,
+				2AF5CD38781CF0DEAD07CEEC554354C3 /* Frameworks */,
+				2B081AFD4F0CD49091756C7414DB3124 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB31A0E1663068BE74EB5A10E91F2467 /* PBXTargetDependency */,
+			);
+			name = "Pods-TAXFREE-app";
+			productName = "Pods-TAXFREE-app";
+			productReference = 7C06502AEDAF9FBDEB72142D1FF24653 /* Pods_TAXFREE_app.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CE96D3CBC308262A639CF0C6ADA07132 /* MaterialControls-MaterialControls */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D4EF86DFC2795B1865D647867FB71EA /* Build configuration list for PBXNativeTarget "MaterialControls-MaterialControls" */;
+			buildPhases = (
+				48D2BA4E08A0A755E1B6949111B6F94A /* Sources */,
+				97692899D726C51338173ED290B81DD7 /* Frameworks */,
+				ABA8426B2F2F5B3E6247A8486DB04CDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MaterialControls-MaterialControls";
+			productName = "MaterialControls-MaterialControls";
+			productReference = 5DAF6A51CC99B6491CE5640587FDECD6 /* MaterialControls.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 6B25FD1D76CC87A0625FF71EE46C1F5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09E04E51439086A458FFB23F9B6CB274 /* MaterialControls */,
+				CE96D3CBC308262A639CF0C6ADA07132 /* MaterialControls-MaterialControls */,
+				56EEFA047BEF71B882D2EA968C14F4F5 /* Pods-TAXFREE-app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CB9BC1AF21C640DBFDAB0CE95147284 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				932CD5B572E34595A6C31213B8F98FDF /* MaterialControls.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABA8426B2F2F5B3E6247A8486DB04CDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		196CA4836DE1CE6C82A039272C342C85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED06FEFB3A1C9050740BAB74F0488B1D /* AutoResizeTextView.m in Sources */,
+				8D432496FAD8807F421385B803C88DAA /* MaterialControls-dummy.m in Sources */,
+				8594D30117FDA82F1C8E36FBC286D21E /* MDBubbleLabel.m in Sources */,
+				7D007AF107CBBE6D7BFDB8351FB5CD88 /* MDButton.m in Sources */,
+				71B1908215862EE46A207767A0A44DAD /* MDCalendar.m in Sources */,
+				CE8478FDA7ABE80CB9186D8E3F0B6665 /* MDCalendarCell.m in Sources */,
+				E659EEAE8731002EB040B53420801626 /* MDCalendarDateHeader.m in Sources */,
+				0338FF6EA0E6B5AAB69A39E822A1584A /* MDCalendarHeader.m in Sources */,
+				CABF6619110C117A9E22AA1AE0A5E807 /* MDCalendarYearSelector.m in Sources */,
+				E8CA55F3184DF903F638C760E34485AB /* MDCalendarYearSelectorViewCell.m in Sources */,
+				7FE34F629327008F241BA25C7ED30962 /* MDCircularProgressLayer.m in Sources */,
+				CE3B7582FF1C21FA9569910D34EAD676 /* MDCollectionViewCell.m in Sources */,
+				E82C06432CD5C258A557A0BC50C9A611 /* MDDatePicker.m in Sources */,
+				752DDF2B0560834820CA32A981AF4FFC /* MDDatePickerDialog.m in Sources */,
+				B5D85AF16F6FC98456903617D713B60B /* MDDeviceHelper.m in Sources */,
+				A69F3FB6F324701F3D8259E4FA3DDD6A /* MDLinearProgressLayer.m in Sources */,
+				364F3A7CEC47F8B721BC3CF1E9F573E9 /* MDMathHelper.m in Sources */,
+				AB45C31CDE2BBC254F2A4A25C757E04B /* MDProgress.m in Sources */,
+				9D21B58F0B390AD7FF6B6FE5E92650FD /* MDProgressLayer.m in Sources */,
+				812E0C9EB34D9EC26E15047882763DF0 /* MDRippleLayer.m in Sources */,
+				F7A81D5552EABCA42AE89D7341228E40 /* MDSlider.m in Sources */,
+				C59EFDA55C151C8F81275B8C470E3B8C /* MDSliderIcon.m in Sources */,
+				BD153D02CE5987EA07886EB64DEF73F8 /* MDSliderThumbView.m in Sources */,
+				73E5E9454B9D6DBB33F0D5D306FC3822 /* MDSliderTickMarksView.m in Sources */,
+				4E6EC810EAB1FCBA535D807EA1284EBD /* MDSnackbar.m in Sources */,
+				3E2977A1FC845CA7A1AA3B05DEFA5240 /* MDSuggestPopupView.m in Sources */,
+				CB4722261643BE6274BFC8365AA9A4E9 /* MDSuggestTableView.m in Sources */,
+				6E608AC95EDB9A4C1453252BCA2F5D3B /* MDSwitch.m in Sources */,
+				A116C86622FA69D75091F5CA55BFBD5C /* MDTabBar.m in Sources */,
+				DDB18C8A5935F38FC47FEAE282067E15 /* MDTabBarViewController.m in Sources */,
+				15B001A4DC5D578B67B5E2845C3B314B /* MDTableViewCell.m in Sources */,
+				57A3B6DC67010A4FCF63BC7252BE2766 /* MDTextField.m in Sources */,
+				21947B49912615B6D57FBB548ED9DBA2 /* MDTimePickerDialog.m in Sources */,
+				33EC6A5B05A0AD22FCAB32F91913048E /* MDToast.m in Sources */,
+				407E39587B0591E76D5543DF749FFA28 /* MDTouchGestureRecognizer.m in Sources */,
+				1E064C2007EE48E72595461F6C88B8E5 /* NSCalendarHelper.m in Sources */,
+				10073179FADBCEF72F4D6195FF76EE55 /* NSDate+MDExtension.m in Sources */,
+				3DE1608ABD4B0E08303AC1832CDE31CA /* NSDateHelper.m in Sources */,
+				E2E511B079F5D51FE0BD2A64693935B6 /* UIColorHelper.m in Sources */,
+				EAC4773AE3A627DDF22A2AD303B4ECA5 /* UIFontHelper.m in Sources */,
+				142DD9EEC58ABF3FA9A7182A90D36001 /* UIView+MDExtension.m in Sources */,
+				00B8967CB60A2D00057F9DB1FCDF1203 /* UIViewHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48D2BA4E08A0A755E1B6949111B6F94A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		974325B58D7B19C9857180A515DCC372 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2509A4CD2727F2EB7843EBFD07011003 /* Pods-TAXFREE-app-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB31A0E1663068BE74EB5A10E91F2467 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MaterialControls;
+			target = 09E04E51439086A458FFB23F9B6CB274 /* MaterialControls */;
+			targetProxy = 3B85D4809F1F842E436CF67E92127BCD /* PBXContainerItemProxy */;
+		};
+		EA544C74037D68C124354D1C258F0409 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MaterialControls-MaterialControls";
+			target = CE96D3CBC308262A639CF0C6ADA07132 /* MaterialControls-MaterialControls */;
+			targetProxy = 1C586C186F5510FFF2E56855A8B59B17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3D5B36250286E8C8469E6123D8362FF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54980381F4D2AE4B23FBC65D0528A5EE /* MaterialControls.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MaterialControls";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/MaterialControls/ResourceBundle-MaterialControls-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = MaterialControls;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		4C96206068F7D6FDABCE7AD2BF306D6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54980381F4D2AE4B23FBC65D0528A5EE /* MaterialControls.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MaterialControls/MaterialControls-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MaterialControls/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MaterialControls/MaterialControls.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MaterialControls;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		506849B1AAAB843AE831EA106A6146FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CC047EF03F46F9F4659430A7B4EF836 /* Pods-TAXFREE-app.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TAXFREE-app/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TAXFREE-app/Pods-TAXFREE-app.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TAXFREE_app;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		543489A9704136F0EA108640DD02F7FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3BFDA0C3E69EB99B49C29EFDDFBE837 /* Pods-TAXFREE-app.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TAXFREE-app/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TAXFREE-app/Pods-TAXFREE-app.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TAXFREE_app;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		753E839707C8741292D8D9D302A37725 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54980381F4D2AE4B23FBC65D0528A5EE /* MaterialControls.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MaterialControls";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/MaterialControls/ResourceBundle-MaterialControls-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = MaterialControls;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C3C05679C2CA95F9E9B976789BB9B887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54980381F4D2AE4B23FBC65D0528A5EE /* MaterialControls.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MaterialControls/MaterialControls-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MaterialControls/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MaterialControls/MaterialControls.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MaterialControls;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00F2EE458CA4EE22E077F4F235B228F6 /* Build configuration list for PBXNativeTarget "Pods-TAXFREE-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				506849B1AAAB843AE831EA106A6146FD /* Debug */,
+				543489A9704136F0EA108640DD02F7FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12914D756594D15C6F2CA12FE5F89F1B /* Debug */,
+				E72E7977875C2D251FC62736BBDDC389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D148C36CC184D3207249F2DF0591929 /* Build configuration list for PBXNativeTarget "MaterialControls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3C05679C2CA95F9E9B976789BB9B887 /* Debug */,
+				4C96206068F7D6FDABCE7AD2BF306D6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D4EF86DFC2795B1865D647867FB71EA /* Build configuration list for PBXNativeTarget "MaterialControls-MaterialControls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				753E839707C8741292D8D9D302A37725 /* Debug */,
+				3D5B36250286E8C8469E6123D8362FF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
