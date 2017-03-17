@@ -4,6 +4,21 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Material-com.cosmicmind.material.fonts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Material-com.cosmicmind.material.icons.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Material.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MaterialControls-MaterialControls.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,7 +42,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>56EEFA047BEF71B882D2EA968C14F4F5</key>
+		<key>3778B8C2CC3D0E1D353FFFB9A1120B81</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3F3F2CE7329B0A70E49EAAE9389170F9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7B9A42D4E141BB05029D874765025F43</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>808BF1AAB30340347945199AA24226EB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
