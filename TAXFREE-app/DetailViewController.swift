@@ -12,8 +12,16 @@ import MaterialControls
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
+    
     @IBOutlet weak var nipfield: MDTextField!
-
+    @IBOutlet weak var nazwaSprzedawcyfield: MDTextField!
+    @IBOutlet weak var kodPocztowyfield: MDTextField!
+    @IBOutlet weak var nrPaszportufield: MDTextField!
+    @IBOutlet weak var nrDokumentufield: MDTextField!
+    @IBOutlet weak var dataWystawieniafield: MDTextField!
+    @IBOutlet weak var wartoscfield: MDTextField!
+    @IBOutlet weak var walutafield: MDTextField!
+    
     func configureView() {
         // Update the user interface for the detail item.
         if let detail = self.detailItem {
@@ -44,3 +52,4 @@ class DetailViewController: UIViewController {
 
 }
 
+//\d{4}-\d{2}-\d{2} data

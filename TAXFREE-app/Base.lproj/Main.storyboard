@@ -108,7 +108,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PODRÓŻNY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZI-xK-4bI">
-                                                <rect key="frame" x="4" y="315" width="351" height="34"/>
+                                                <rect key="frame" x="0.0" y="315" width="359" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -153,6 +153,9 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="floatingLabel" value="YES"/>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="highlightLabel" value="YES"/>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="singleLine" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxCharacterCount">
+                                                        <integer key="value" value="100"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qpz-Sq-8Cd" customClass="MDTextField">
@@ -162,10 +165,12 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="hint" value="Data wystawienia dokumentu"/>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="highlightColor">
-                                                        <color key="value" red="0.49725842479999999" green="0.94998270269999996" blue="0.2991558909" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="value" red="0.9950874448" green="0.9694315791" blue="0.19250765440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="label" value="Data wystawienia dokumentu"/>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autoComplete" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="floatingLabel" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="highlightLabel" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="singleLine" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j37-su-yHu" customClass="MDTextField">
@@ -176,19 +181,26 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="hint" value="Wartość brutto"/>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="label" value="Wartość"/>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="highlightColor">
-                                                        <color key="value" red="0.087759266559999993" green="1" blue="0.13353871349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="value" red="0.9950874448" green="0.9694315791" blue="0.19250765440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="floatingLabel" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="highlightLabel" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="singleLine" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lzv-SZ-srd" customClass="MDTextField">
-                                                <rect key="frame" x="238" y="670" width="121" height="47"/>
+                                                <rect key="frame" x="238" y="644" width="121" height="63"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="hint" value="Waluta"/>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
-                                                        <color key="value" red="0.49725842479999999" green="0.94998270269999996" blue="0.2991558909" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightColor">
+                                                        <color key="value" red="0.9950874448" green="0.9694315791" blue="0.19250765440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="floatingLabel" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="highlightLabel" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="label" value="Waluta"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="singleLine" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
@@ -223,7 +235,14 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
+                        <outlet property="dataWystawieniafield" destination="Qpz-Sq-8Cd" id="W82-vw-Y2f"/>
+                        <outlet property="kodPocztowyfield" destination="zlb-gb-Pih" id="m8q-g0-kGt"/>
+                        <outlet property="nazwaSprzedawcyfield" destination="Huu-as-mKA" id="6UC-vy-aXF"/>
                         <outlet property="nipfield" destination="Vrt-36-VX9" id="BkH-uI-0Ul"/>
+                        <outlet property="nrDokumentufield" destination="y8f-cW-8th" id="LjG-PQ-dNc"/>
+                        <outlet property="nrPaszportufield" destination="Pqb-vK-9AM" id="AbD-8S-wnY"/>
+                        <outlet property="walutafield" destination="lzv-SZ-srd" id="ZrG-s3-koV"/>
+                        <outlet property="wartoscfield" destination="j37-su-yHu" id="oRE-IH-jOp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
