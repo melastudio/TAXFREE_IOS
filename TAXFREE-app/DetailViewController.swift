@@ -21,12 +21,14 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var dataWystawieniafield: MDTextField!
     @IBOutlet weak var wartoscfield: MDTextField!
     @IBOutlet weak var walutafield: MDTextField!
+    @IBOutlet weak var innyAsortymentfield: MDTextField!
     
     func configureView() {
         // Update the user interface for the detail item.
         if let detail = self.detailItem {
             if let label = self.detailDescriptionLabel {
                 label.text = detail.description
+                
             }
         }
     }
@@ -49,7 +51,18 @@ class DetailViewController: UIViewController {
         }
     }
 
-
+    /*@IBAction func btn_box(sender: UIButton) {
+        if (btn_box.selected == true)
+        {
+            btn_box.setBackgroundImage(UIImage(named: "box"), forState: UIControlState.Normal)
+            btn_box.selected = false;
+        }
+        else
+        {
+            btn_box.setBackgroundImage(UIImage(named: "checkBox"), forState: UIControlState.Normal)
+            btn_box.selected = true;
+        }
+    }*/
 }
 
 //\d{4}-\d{2}-\d{2} data
