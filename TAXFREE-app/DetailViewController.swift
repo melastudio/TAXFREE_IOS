@@ -22,6 +22,32 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var wartoscfield: MDTextField!
     @IBOutlet weak var walutafield: MDTextField!
     @IBOutlet weak var innyAsortymentfield: MDTextField!
+
+    @IBOutlet weak var chbAGD: CheckBox!
+    @IBOutlet weak var chbBudowlane: CheckBox!
+    @IBOutlet weak var chbChemia: CheckBox!
+    @IBOutlet weak var chbElektronarzedzia: CheckBox!
+    @IBOutlet weak var chbElektronika: CheckBox!
+    @IBOutlet weak var chbHigiena: CheckBox!
+    @IBOutlet weak var chbKosmetyki: CheckBox!
+    @IBOutlet weak var chbOdziez: CheckBox!
+    @IBOutlet weak var chbOgrodnicze: CheckBox!
+    @IBOutlet weak var chbRTV: CheckBox!
+    @IBOutlet weak var chbSpozywcze: CheckBox!
+    @IBOutlet weak var chbTekstylia: CheckBox!
+    @IBOutlet weak var chbBizuteria: CheckBox!
+    @IBOutlet weak var chbCzesciSam: CheckBox!
+    
+    var listaAsortymentu: [String]=[]
+    @IBAction func setSunday(sender: CheckBox) {
+        if sender.isChecked {
+            //daysArray.append("0")
+            //print(daysArray) // Check the array is working then delete
+        } else {
+            //daysArray.removeAtIndex(0)
+            //print(daysArray) // Check the array is working then delete
+        }
+    }
     
     func configureView() {
         // Update the user interface for the detail item.
