@@ -13,7 +13,8 @@ class CheckBox: UIButton {
     // Images
     let checkedImage = UIImage(named: "checked")! as UIImage
     let uncheckedImage = UIImage(named: "unchecked")! as UIImage
-    
+    var value : String!
+
     // Bool property
     var isChecked: Bool = false {
         didSet{
@@ -26,7 +27,7 @@ class CheckBox: UIButton {
     }
     
     override func awakeFromNib() {
-        self.addTarget(self, action:Selector(("buttonClicked:")), for: UIControlEvents.touchUpInside)
+        self.addTarget(self,action:#selector(buttonClicked),for:.touchUpInside)
         self.isChecked = false
     }
     
@@ -35,5 +36,11 @@ class CheckBox: UIButton {
             isChecked = !isChecked
         }
     }
-
+    
+    func setValue(value: String) {
+        self.value=value
+    }
+    func getValue() -> String!{
+        return self.value
+    }
 }

@@ -19,6 +19,7 @@
 		652D32ED1E6C7B1B005CF7C3 /* Rachunek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D32EC1E6C7B1B005CF7C3 /* Rachunek.swift */; };
 		652D32EF1E6C9474005CF7C3 /* Podrozny.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D32EE1E6C9474005CF7C3 /* Podrozny.swift */; };
 		652D32F11E6C949C005CF7C3 /* Wystawca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D32F01E6C949C005CF7C3 /* Wystawca.swift */; };
+		65CE25D81E8D83000001015D /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CE25D71E8D83000001015D /* Validator.swift */; };
 		65D0A20F1E8A9AE000BD4DFB /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0A20E1E8A9AE000BD4DFB /* CheckBox.swift */; };
 		94805FE4C36C83F0004A3C39 /* Pods_TAXFREE_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CA9A463BE3F3339724EE58E /* Pods_TAXFREE_app.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		652D32EC1E6C7B1B005CF7C3 /* Rachunek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rachunek.swift; sourceTree = "<group>"; };
 		652D32EE1E6C9474005CF7C3 /* Podrozny.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Podrozny.swift; sourceTree = "<group>"; };
 		652D32F01E6C949C005CF7C3 /* Wystawca.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wystawca.swift; sourceTree = "<group>"; };
+		65CE25D71E8D83000001015D /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		65D0A20E1E8A9AE000BD4DFB /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		6741F9B3B6A8665C75307013 /* Pods-TAXFREE-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAXFREE-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TAXFREE-app/Pods-TAXFREE-app.debug.xcconfig"; sourceTree = "<group>"; };
 		6CA9A463BE3F3339724EE58E /* Pods_TAXFREE_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TAXFREE_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +139,7 @@
 				652D32EE1E6C9474005CF7C3 /* Podrozny.swift */,
 				652D32F01E6C949C005CF7C3 /* Wystawca.swift */,
 				6503C3BA1E6DF954007C5BE0 /* Adres.swift */,
+				65CE25D71E8D83000001015D /* Validator.swift */,
 			);
 			path = "TAXFREE-app";
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65D0A20F1E8A9AE000BD4DFB /* CheckBox.swift in Sources */,
+				65CE25D81E8D83000001015D /* Validator.swift in Sources */,
 				652D32C11E6AEA26005CF7C3 /* DetailViewController.swift in Sources */,
 				652D32BF1E6AEA26005CF7C3 /* MasterViewController.swift in Sources */,
 				652D32ED1E6C7B1B005CF7C3 /* Rachunek.swift in Sources */,

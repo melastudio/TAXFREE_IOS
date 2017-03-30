@@ -38,25 +38,86 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var chbBizuteria: CheckBox!
     @IBOutlet weak var chbCzesciSam: CheckBox!
     
-    var listaAsortymentu: [String]=[]
-    @IBAction func setSunday(sender: CheckBox) {
-        if sender.isChecked {
-            //daysArray.append("0")
-            //print(daysArray) // Check the array is working then delete
-        } else {
-            //daysArray.removeAtIndex(0)
-            //print(daysArray) // Check the array is working then delete
-        }
-    }
-    
     func configureView() {
         // Update the user interface for the detail item.
         if let detail = self.detailItem {
-            if let label = self.detailDescriptionLabel {
-                label.text = detail.description
-                
-            }
+            if let label = self.detailDescriptionLabel { label.text = detail.description}
+            self.initCheckboxes()
         }
+    }
+    
+    func initCheckboxes(){
+        if let button = self.chbAGD
+        {
+            button.setTitle("AGD", for: [])
+            button.setValue(value: "AGD")
+        }
+        if let button = self.chbBudowlane
+        {
+            button.setTitle("Budowlane", for: [])
+            button.setValue(value: "BUDOWLANE")
+        }
+        if let button = self.chbChemia
+        {
+            button.setTitle("Chemia", for: [])
+            button.setValue(value: "CHEMIA")
+        }
+        if let button = self.chbElektronarzedzia
+        {
+            button.setTitle("Elektronarzędzia", for: [])
+            button.setValue(value: "ELEKTRONARZĘDZIA")
+        }
+        if let button = self.chbElektronika
+        {
+            button.setTitle("Elektronika", for: [])
+            button.setValue(value: "ELEKTRONIKA")
+        }
+        if let button = self.chbHigiena
+        {
+            button.setTitle("Higiena", for: [])
+            button.setValue(value: "HIGIENA")
+        }
+        if let button = self.chbKosmetyki
+        {
+            button.setTitle("Kosmetyki", for: [])
+            button.setValue(value: "KOSMETYKI")
+        }
+        if let button = self.chbOdziez
+        {
+            button.setTitle("Odzież", for: [])
+            button.setValue(value: "ODZIEŻ")
+        }
+        if let button = self.chbOgrodnicze
+        {
+            button.setTitle("Ogrodnicze", for: [])
+            button.setValue(value: "OGRODNICZE")
+        }
+        if let button = self.chbRTV
+        {
+            button.setTitle("RTV", for: [])
+            button.setValue(value: "RTV")
+        }
+        if let button = self.chbSpozywcze
+        {
+            button.setTitle("Spożywcze", for: [])
+            button.setValue(value: "SPOŻYWCZE")
+        }
+        if let button = self.chbTekstylia
+        {
+            button.setTitle("Tekstylia", for: [])
+            button.setValue(value: "TEKSTYLIA")
+        }
+        if let button = self.chbBizuteria
+        {
+            button.setTitle("Biżuteria", for: [])
+            button.setValue(value: "BIŻUTERIA")
+        }
+        if let button = self.chbCzesciSam
+        {
+            button.setTitle("Części samochodowe", for: [])
+            button.setValue(value: "CZĘŚCI_SAMOCHODOWE")
+        }
+
     }
 
     override func viewDidLoad() {
@@ -77,18 +138,5 @@ class DetailViewController: UIViewController {
         }
     }
 
-    /*@IBAction func btn_box(sender: UIButton) {
-        if (btn_box.selected == true)
-        {
-            btn_box.setBackgroundImage(UIImage(named: "box"), forState: UIControlState.Normal)
-            btn_box.selected = false;
-        }
-        else
-        {
-            btn_box.setBackgroundImage(UIImage(named: "checkBox"), forState: UIControlState.Normal)
-            btn_box.selected = true;
-        }
-    }*/
+    
 }
-
-//\d{4}-\d{2}-\d{2} data
