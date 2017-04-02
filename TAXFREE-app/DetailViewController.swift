@@ -46,6 +46,7 @@ class DetailViewController: UIViewController {
         }
     }
     
+    
     func initCheckboxes(){
         if let button = self.chbAGD
         {
