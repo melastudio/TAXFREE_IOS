@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Material
 import MaterialControls
 
 class DetailViewController: UIViewController {

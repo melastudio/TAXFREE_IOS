@@ -21,7 +21,7 @@
 		652D32F11E6C949C005CF7C3 /* Wystawca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D32F01E6C949C005CF7C3 /* Wystawca.swift */; };
 		65CE25D81E8D83000001015D /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CE25D71E8D83000001015D /* Validator.swift */; };
 		65D0A20F1E8A9AE000BD4DFB /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0A20E1E8A9AE000BD4DFB /* CheckBox.swift */; };
-		94805FE4C36C83F0004A3C39 /* Pods_TAXFREE_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CA9A463BE3F3339724EE58E /* Pods_TAXFREE_app.framework */; };
+		77497E9D081235C451C4F292 /* Pods_TAXFREE_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E79AF4445899838F94F3DA /* Pods_TAXFREE_app.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49E79AF4445899838F94F3DA /* Pods_TAXFREE_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TAXFREE_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C34F34FCF96BD908440D33B /* Pods-TAXFREE-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAXFREE-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-TAXFREE-app/Pods-TAXFREE-app.release.xcconfig"; sourceTree = "<group>"; };
+		625420695D7B59DDD7B4FE4E /* Pods-TAXFREE-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAXFREE-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TAXFREE-app/Pods-TAXFREE-app.debug.xcconfig"; sourceTree = "<group>"; };
 		6503C3BA1E6DF954007C5BE0 /* Adres.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Adres.swift; sourceTree = "<group>"; };
 		652D32B91E6AEA26005CF7C3 /* TAXFREE-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TAXFREE-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		652D32BC1E6AEA26005CF7C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,9 +65,6 @@
 		652D32F01E6C949C005CF7C3 /* Wystawca.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wystawca.swift; sourceTree = "<group>"; };
 		65CE25D71E8D83000001015D /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		65D0A20E1E8A9AE000BD4DFB /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
-		6741F9B3B6A8665C75307013 /* Pods-TAXFREE-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAXFREE-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TAXFREE-app/Pods-TAXFREE-app.debug.xcconfig"; sourceTree = "<group>"; };
-		6CA9A463BE3F3339724EE58E /* Pods_TAXFREE_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TAXFREE_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2D6F11AA7D24F534CEA6A39 /* Pods-TAXFREE-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAXFREE-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-TAXFREE-app/Pods-TAXFREE-app.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94805FE4C36C83F0004A3C39 /* Pods_TAXFREE_app.framework in Frameworks */,
+				77497E9D081235C451C4F292 /* Pods_TAXFREE_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,11 +93,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3D8E3F92CB58B6A89F485D16 /* Pods */ = {
+		4384BC3621544D11F2B33310 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6741F9B3B6A8665C75307013 /* Pods-TAXFREE-app.debug.xcconfig */,
-				D2D6F11AA7D24F534CEA6A39 /* Pods-TAXFREE-app.release.xcconfig */,
+				625420695D7B59DDD7B4FE4E /* Pods-TAXFREE-app.debug.xcconfig */,
+				5C34F34FCF96BD908440D33B /* Pods-TAXFREE-app.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -109,8 +109,8 @@
 				652D32D21E6AEA26005CF7C3 /* TAXFREE-appTests */,
 				652D32DD1E6AEA26005CF7C3 /* TAXFREE-appUITests */,
 				652D32BA1E6AEA26005CF7C3 /* Products */,
-				3D8E3F92CB58B6A89F485D16 /* Pods */,
-				C641153A912AAC6AE988D918 /* Frameworks */,
+				4384BC3621544D11F2B33310 /* Pods */,
+				972E26CB49021E947ABD2C32 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,10 +162,10 @@
 			path = "TAXFREE-appUITests";
 			sourceTree = "<group>";
 		};
-		C641153A912AAC6AE988D918 /* Frameworks */ = {
+		972E26CB49021E947ABD2C32 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6CA9A463BE3F3339724EE58E /* Pods_TAXFREE_app.framework */,
+				49E79AF4445899838F94F3DA /* Pods_TAXFREE_app.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -177,12 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 652D32E31E6AEA26005CF7C3 /* Build configuration list for PBXNativeTarget "TAXFREE-app" */;
 			buildPhases = (
-				1418374A08ACB66FDA54474A /* [CP] Check Pods Manifest.lock */,
+				DA7387718A30C4DB7ECC6AF5 /* [CP] Check Pods Manifest.lock */,
 				652D32B51E6AEA25005CF7C3 /* Sources */,
 				652D32B61E6AEA25005CF7C3 /* Frameworks */,
 				652D32B71E6AEA25005CF7C3 /* Resources */,
-				6EA6303FA52423C240E68DA4 /* [CP] Embed Pods Frameworks */,
-				6E16DEE0A247DD470A0DDF24 /* [CP] Copy Pods Resources */,
+				7FA33C0E135C93048AC4CC97 /* [CP] Embed Pods Frameworks */,
+				997D43C2EC180DBFD07434E5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -306,22 +306,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1418374A08ACB66FDA54474A /* [CP] Check Pods Manifest.lock */ = {
+		7FA33C0E135C93048AC4CC97 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TAXFREE-app/Pods-TAXFREE-app-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6E16DEE0A247DD470A0DDF24 /* [CP] Copy Pods Resources */ = {
+		997D43C2EC180DBFD07434E5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -336,19 +336,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TAXFREE-app/Pods-TAXFREE-app-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6EA6303FA52423C240E68DA4 /* [CP] Embed Pods Frameworks */ = {
+		DA7387718A30C4DB7ECC6AF5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TAXFREE-app/Pods-TAXFREE-app-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -516,7 +516,7 @@
 		};
 		652D32E41E6AEA26005CF7C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6741F9B3B6A8665C75307013 /* Pods-TAXFREE-app.debug.xcconfig */;
+			baseConfigurationReference = 625420695D7B59DDD7B4FE4E /* Pods-TAXFREE-app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3VEE2K9525;
@@ -530,7 +530,7 @@
 		};
 		652D32E51E6AEA26005CF7C3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2D6F11AA7D24F534CEA6A39 /* Pods-TAXFREE-app.release.xcconfig */;
+			baseConfigurationReference = 5C34F34FCF96BD908440D33B /* Pods-TAXFREE-app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3VEE2K9525;
