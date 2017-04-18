@@ -7,28 +7,31 @@
 //
 
 import UIKit
+import Material
 
-class MasterViewController: UITableViewController {
+/*class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
     var objects = [Any]()
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.navigationItem.leftBarButtonItem = self.editButtonItem
+        //self.navigationItem.leftBarButtonItem = self.editButtonItem
 
-        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
-        self.navigationItem.rightBarButtonItem = addButton
-        if let split = self.splitViewController {
-            let controllers = split.viewControllers
-            self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
-        }
+        //let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
+        //self.navigationItem.rightBarButtonItem = addButton
+
+        
+        //if let split = self.splitViewController {
+         //   let controllers = split.viewControllers
+            //self.detailViewController = (self.childViewControllers[0] as! UINavigationController).topViewController as? DetailViewController
+        //}
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        self.clearsSelectionOnViewWillAppear = self.splitViewController!.isCollapsed
+        //self.clearsSelectionOnViewWillAppear = self.splitViewController!.isCollapsed
         super.viewWillAppear(animated)
     }
 
@@ -91,4 +94,109 @@ class MasterViewController: UITableViewController {
 
 
 }
+
+class MasterViewController: UIViewController {
+    
+    var detailViewController: DetailViewController? = nil
+    /**
+     Retrieves the data source items for the tableView.
+     - Returns: An Array of DataSourceItem objects.
+     */
+    open var dataSourceItems = [DataSourceItem]()
+    
+    fileprivate var toolbar: Toolbar!
+    fileprivate var tableView: TableView!
+    fileprivate var card: Card!
+    
+    open override func viewDidLoad() {
+        super.viewDidLoad()
+        self.navigationItem.leftBarButtonItem = self.editButtonItem
+        
+        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
+        self.navigationItem.rightBarButtonItem = addButton
+        
+        view.backgroundColor = .white
+        prepareToolbar()
+        prepareTableView()
+        prepareCard()
+        prepareData()
+    }
+}
+
+extension MasterViewController: TableViewDelegate {
+    fileprivate func prepareToolbar() {
+        toolbar = Toolbar()
+        toolbar.title = "Ostatnio wprowadzone"
+        //toolbar.detail = "Sample"
+    }
+    
+    fileprivate func prepareTableView() {
+        tableView = TableView()
+        tableView.height = 400
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(TableViewCell.self, forCellReuseIdentifier: "showDetail")
+    }
+    
+    fileprivate func prepareCard() {
+        card = Card()
+        card.toolbar = toolbar
+        card.contentView = tableView
+        view.layout(card).horizontally(left: 10, right: 10).center()
+    }
+    
+    fileprivate func prepareData() {
+        let persons = [["name": "Test1"], ["name": "Test2"]]
+        for person in persons {
+            dataSourceItems.append(DataSourceItem(data: person))
+        }
+        tableView.reloadData()
+    }
+    
+    @objc fileprivate func insertNewObject(_ sender: Any) {
+        //objects.insert(NSDate(), at: 0)
+        let indexPath = IndexPath(row: 0, section: 0)
+        self.tableView.insertRows(at: [indexPath], with: .automatic)
+    }
+
+    @objc
+    open override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        navigationController?.pushViewController(DetailViewController(), animated: true)
+        if segue.identifier == "showDetail" {
+                    }
+    }
+
+}
+
+extension MasterViewController: TableViewDataSource { //ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
+    @objc
+    open func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    @objc
+    open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataSourceItems.count
+    }
+    
+    @objc
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "showDetail", for: indexPath) as! TableViewCell
+        
+        guard let data = dataSourceItems[indexPath.row].data as? [String: String] else {
+            return cell
+        }
+        
+        cell.textLabel?.text = data["name"]
+        
+        return cell
+    }
+    
+    
+}*/
+
+ 
+
+
+
 

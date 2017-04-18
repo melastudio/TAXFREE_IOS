@@ -10,6 +10,13 @@ import UIKit
 import Material
 import MaterialControls
 
+struct ButtonLayout {
+    struct Fab {
+        static let diameter: CGFloat = 48
+    }
+}
+
+
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
@@ -125,6 +132,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        prepareFABButton()
         self.configureView()
     }
 
@@ -133,7 +141,7 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    var detailItem: NSDate? {
+    var detailItem: String? {
         didSet {
             // Update the view.
             self.configureView()
@@ -142,3 +150,16 @@ class DetailViewController: UIViewController {
 
     
 }
+
+extension DetailViewController {
+    fileprivate func prepareFABButton() {
+        let button = FABButton(image: Icon.cm.add, tintColor: .white)
+        button.pulseColor = .white
+        button.backgroundColor = Color.yellow.base
+        
+        view.layout(button)
+            .width(ButtonLayout.Fab.diameter)
+            .height(ButtonLayout.Fab.diameter).bottomRight(bottom: 20, right: 20)
+    }
+}
+

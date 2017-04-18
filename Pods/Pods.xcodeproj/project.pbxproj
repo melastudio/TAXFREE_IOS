@@ -239,7 +239,7 @@
 		0A0BC063D52970001B798536CAC03F4C /* Snackbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Snackbar.swift; path = Sources/iOS/Snackbar.swift; sourceTree = "<group>"; };
 		0A39F9B5C57B1CF9535139ED64F692AA /* Switch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Switch.swift; path = Sources/iOS/Switch.swift; sourceTree = "<group>"; };
 		0AEDE0A157F677C14472114CB87A50C9 /* MDTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDTableViewCell.h; path = iOSUILib/iOSUILib/MDTableViewCell.h; sourceTree = "<group>"; };
-		0B827FFA9749A10DB44C9F199647F2D1 /* Roboto-Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "Sources/Font/Roboto/Roboto-Light.ttf"; sourceTree = "<group>"; };
+		0B827FFA9749A10DB44C9F199647F2D1 /* Roboto-Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Light.ttf"; path = "Sources/Font/Roboto/Roboto-Light.ttf"; sourceTree = "<group>"; };
 		0D325D8F6FEFDF3DD4C6F499CC9E440A /* EditorController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EditorController.swift; path = Sources/iOS/EditorController.swift; sourceTree = "<group>"; };
 		0F8B9F0A763E3C9DD1CAF4E1AF5196B6 /* MDCalendar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCalendar.h; path = iOSUILib/iOSUILib/Calendar/MDCalendar.h; sourceTree = "<group>"; };
 		1154FCC9ECFED53D90E1319A6F7C1FDE /* IconButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IconButton.swift; path = Sources/iOS/IconButton.swift; sourceTree = "<group>"; };
@@ -253,7 +253,7 @@
 		22042199C03D8039D4F1E74454DA9C08 /* MDTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDTextField.h; path = iOSUILib/iOSUILib/MDTextField.h; sourceTree = "<group>"; };
 		23FB7D51C5F556A544E4F2EFACCE5B1E /* Depth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Depth.swift; path = Sources/iOS/Depth.swift; sourceTree = "<group>"; };
 		246F16FE9D3D51E5AA2B87AA77822D0E /* PresenterCard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresenterCard.swift; path = Sources/iOS/PresenterCard.swift; sourceTree = "<group>"; };
-		2484DBA5F54BB203887A93638F2F8CB9 /* MaterialControls.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaterialControls.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2484DBA5F54BB203887A93638F2F8CB9 /* MaterialControls.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MaterialControls.framework; path = MaterialControls.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26F9D75BDCBDBC6DE628001BD362C1C0 /* CollectionViewCard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionViewCard.swift; path = Sources/iOS/CollectionViewCard.swift; sourceTree = "<group>"; };
 		2B58187626F7DD0A951343CA38584FDE /* FABMenuController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FABMenuController.swift; path = Sources/iOS/FABMenuController.swift; sourceTree = "<group>"; };
 		2CC0D4C76E5B744C9062AB2A1EEF91A7 /* MDConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDConstants.h; path = iOSUILib/iOSUILib/MDConstants.h; sourceTree = "<group>"; };
@@ -271,7 +271,7 @@
 		38A5357A028FBDB187835DD170260E99 /* MDCircularProgressLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCircularProgressLayer.h; path = iOSUILib/iOSUILib/Progress/MDCircularProgressLayer.h; sourceTree = "<group>"; };
 		3979D6B2774376DDDCC312D1732F7760 /* MDTabBarViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDTabBarViewController.h; path = iOSUILib/iOSUILib/MDTabBarViewController.h; sourceTree = "<group>"; };
 		3F85BDE8A3AFB519A6B21F4B97A5B849 /* MDCollectionViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCollectionViewCell.m; path = iOSUILib/iOSUILib/MDCollectionViewCell.m; sourceTree = "<group>"; };
-		3FC9D9A1E7BE1740AB986A200FE17F99 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-Thin.ttf"; path = "Sources/Font/Roboto/Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		3FC9D9A1E7BE1740AB986A200FE17F99 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Thin.ttf"; path = "Sources/Font/Roboto/Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		407613F3F9806D419CB333ECBBF69F61 /* NSCalendarHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NSCalendarHelper.m; path = iOSUILib/iOSUILib/Calendar/NSCalendarHelper.m; sourceTree = "<group>"; };
 		42376DAF56B4C1E11A91E41FCA05AD3A /* MaterialControls-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialControls-umbrella.h"; sourceTree = "<group>"; };
 		42A490F35B6EB5C7F07D922980848BC2 /* MDTouchGestureRecognizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDTouchGestureRecognizer.h; path = iOSUILib/iOSUILib/MDTouchGestureRecognizer.h; sourceTree = "<group>"; };
@@ -282,7 +282,7 @@
 		48CB03BDD7590C479DF822CA3EF88B3B /* Shape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shape.swift; path = Sources/iOS/Shape.swift; sourceTree = "<group>"; };
 		4C096225D8C1D39409B2BAE68F162C36 /* MDToast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDToast.m; path = iOSUILib/iOSUILib/MDToast.m; sourceTree = "<group>"; };
 		4D274ABDD8A82CC4745C129571493D55 /* AutoResizeTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AutoResizeTextView.h; path = iOSUILib/iOSUILib/AutoResizeTextView.h; sourceTree = "<group>"; };
-		4EDDE3C5059F642D25994DF03F52EE9D /* Roboto-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "Sources/Font/Roboto/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		4EDDE3C5059F642D25994DF03F52EE9D /* Roboto-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Bold.ttf"; path = "Sources/Font/Roboto/Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		4F33723342251976180032DE073C8006 /* MDSwitch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDSwitch.h; path = iOSUILib/iOSUILib/MDSwitch.h; sourceTree = "<group>"; };
 		4FC1A0D1D8C448AADB416B1698A5A70C /* BottomNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BottomNavigationController.swift; path = Sources/iOS/BottomNavigationController.swift; sourceTree = "<group>"; };
 		505EE2E5FF48A452F13B2F3E06123AA3 /* Pods-TAXFREE-app-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TAXFREE-app-resources.sh"; sourceTree = "<group>"; };
@@ -297,7 +297,7 @@
 		59EA6B00AD238E8F050378018BA1024C /* NavigationBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationBar.swift; path = Sources/iOS/NavigationBar.swift; sourceTree = "<group>"; };
 		5BBC099EEF63681EFC98E8CE22814F9A /* MDProgress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDProgress.m; path = iOSUILib/iOSUILib/MDProgress.m; sourceTree = "<group>"; };
 		5C8C77D926009C59A8749DDEF11E91DE /* PulseAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PulseAnimation.swift; path = Sources/iOS/PulseAnimation.swift; sourceTree = "<group>"; };
-		5CA7F1628FE9D5FE8E355C4564ED5A4C /* MaterialControls.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MaterialControls.modulemap; sourceTree = "<group>"; };
+		5CA7F1628FE9D5FE8E355C4564ED5A4C /* MaterialControls.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MaterialControls.modulemap; sourceTree = "<group>"; };
 		5D1B833DAEADBE4E8B31C8B2EB83D67B /* SearchBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchBar.swift; path = Sources/iOS/SearchBar.swift; sourceTree = "<group>"; };
 		5E70161C6D796B54DDC4D97A70990601 /* PulseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PulseView.swift; path = Sources/iOS/PulseView.swift; sourceTree = "<group>"; };
 		61F21B8C0CE39760D7154FFEF28A821F /* Material+Motion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+Motion.swift"; path = "Sources/iOS/Material+Motion.swift"; sourceTree = "<group>"; };
@@ -307,9 +307,9 @@
 		65C0E01A01A4B4916B953B151202D090 /* NavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationController.swift; path = Sources/iOS/NavigationController.swift; sourceTree = "<group>"; };
 		66D354E15573AE1A1D6681D88BC6C636 /* Toolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toolbar.swift; path = Sources/iOS/Toolbar.swift; sourceTree = "<group>"; };
 		67787F10343F9B20D35FB6C1614A7A3B /* NavigationDrawerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationDrawerController.swift; path = Sources/iOS/NavigationDrawerController.swift; sourceTree = "<group>"; };
-		6954D174B50B1947596E97EE005B7F0E /* Roboto-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "Sources/Font/Roboto/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		6954D174B50B1947596E97EE005B7F0E /* Roboto-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Regular.ttf"; path = "Sources/Font/Roboto/Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		6A106C90F5FE9AB76B629A79857AF326 /* MDTabBarViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDTabBarViewController.m; path = iOSUILib/iOSUILib/MDTabBarViewController.m; sourceTree = "<group>"; };
-		6B3F062E5D1D2AEE9BDDACAC28FA4186 /* com.cosmicmind.material.fonts.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.cosmicmind.material.fonts.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B3F062E5D1D2AEE9BDDACAC28FA4186 /* com.cosmicmind.material.fonts.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = com.cosmicmind.material.fonts.bundle; path = com.cosmicmind.material.fonts.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CB5B2A06E95A411178B4A7660224BCC /* Material.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Material.xcconfig; sourceTree = "<group>"; };
 		6CC047EF03F46F9F4659430A7B4EF836 /* Pods-TAXFREE-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TAXFREE-app.debug.xcconfig"; sourceTree = "<group>"; };
 		6E4BD786AE6E2BEF04FF594745B19B38 /* MDProgressLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDProgressLayer.h; path = iOSUILib/iOSUILib/Progress/MDProgressLayer.h; sourceTree = "<group>"; };
@@ -334,19 +334,19 @@
 		86AB209BE121A5CE66DF5960FC8FB047 /* MDDeviceHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDDeviceHelper.h; path = iOSUILib/iOSUILib/Helpers/MDDeviceHelper.h; sourceTree = "<group>"; };
 		87CA21F5D781A9B90EB9301E66347912 /* Divider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Divider.swift; path = Sources/iOS/Divider.swift; sourceTree = "<group>"; };
 		8A46B6EFA2129D0B2FB812A12590B1FC /* Gravity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Gravity.swift; path = Sources/iOS/Gravity.swift; sourceTree = "<group>"; };
-		8A4B9F7E91CFDCD2789C8C7646CFC4D8 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-Medium.ttf"; path = "Sources/Font/Roboto/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		8A4B9F7E91CFDCD2789C8C7646CFC4D8 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Medium.ttf"; path = "Sources/Font/Roboto/Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		8A5DB886C0E6EB064E1FC23BE9A9C1B7 /* Pods-TAXFREE-app-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TAXFREE-app-acknowledgements.plist"; sourceTree = "<group>"; };
-		8B7A37B3C6CDFD87CDECF315C0DA3102 /* Pods_TAXFREE_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TAXFREE_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B7A37B3C6CDFD87CDECF315C0DA3102 /* Pods_TAXFREE_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TAXFREE_app.framework; path = "Pods-TAXFREE-app.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA39046FF5D2AB2ECD23B35FF007E87 /* MDDatePickerDialog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDDatePickerDialog.m; path = iOSUILib/iOSUILib/Calendar/MDDatePickerDialog.m; sourceTree = "<group>"; };
 		8CAD9A93D18BA48B8DBD7B1B04AE2E67 /* MDLinearProgressLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDLinearProgressLayer.h; path = iOSUILib/iOSUILib/Progress/MDLinearProgressLayer.h; sourceTree = "<group>"; };
 		8D1F73C10526801EE0E26B5375D0F550 /* FlatButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlatButton.swift; path = Sources/iOS/FlatButton.swift; sourceTree = "<group>"; };
 		8D6CEBC111FCDB6278E7D3CAC28EC09E /* Icon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Icon.swift; path = Sources/iOS/Icon.swift; sourceTree = "<group>"; };
-		8F1BAC5673DDB7C95FA241E8964EB5DE /* Pods-TAXFREE-app.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TAXFREE-app.modulemap"; sourceTree = "<group>"; };
+		8F1BAC5673DDB7C95FA241E8964EB5DE /* Pods-TAXFREE-app.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TAXFREE-app.modulemap"; sourceTree = "<group>"; };
 		8FAF41A2E9F5476035D1FFFA9A8E1E65 /* TextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextView.swift; path = Sources/iOS/TextView.swift; sourceTree = "<group>"; };
 		90695663FE5DD266FD566CB345BA2BB6 /* ResourceBundle-com.cosmicmind.material.fonts-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-com.cosmicmind.material.fonts-Info.plist"; sourceTree = "<group>"; };
 		9120A5B766FD08D19D192F430B6A8C88 /* NSDateHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NSDateHelper.m; path = iOSUILib/iOSUILib/Helpers/NSDateHelper.m; sourceTree = "<group>"; };
 		92FD46F3EA496A724DCE50B76EB2D5B5 /* Pods-TAXFREE-app-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TAXFREE-app-dummy.m"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9485CBF157C93D12EC6E08D5B456CD02 /* MDButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDButton.h; path = iOSUILib/iOSUILib/MDButton.h; sourceTree = "<group>"; };
 		95DE717DC445A8EAD2366DBF2746B8DE /* Material+UIFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+UIFont.swift"; path = "Sources/iOS/Material+UIFont.swift"; sourceTree = "<group>"; };
 		97E393A2702A8E188FC96678DBFD974B /* TextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextField.swift; path = Sources/iOS/TextField.swift; sourceTree = "<group>"; };
@@ -363,10 +363,10 @@
 		A358F642B1388FD3B0049E378109F5C4 /* EdgeInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EdgeInsets.swift; path = Sources/iOS/EdgeInsets.swift; sourceTree = "<group>"; };
 		A425FDFB86C61B8045E01052EFB031C1 /* MDDatePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDDatePicker.m; path = iOSUILib/iOSUILib/Calendar/MDDatePicker.m; sourceTree = "<group>"; };
 		A56E713448B6719D0EFF9C37AFE07CCD /* Material+Obj-C.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+Obj-C.swift"; path = "Sources/iOS/Material+Obj-C.swift"; sourceTree = "<group>"; };
-		A67C0249698B41C6A8BD48D62E97D711 /* MaterialControls.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaterialControls.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A67C0249698B41C6A8BD48D62E97D711 /* MaterialControls.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MaterialControls.bundle; path = MaterialControls.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		A767BB65C38FBEC535F48415BF23E580 /* MDButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDButton.m; path = iOSUILib/iOSUILib/MDButton.m; sourceTree = "<group>"; };
 		A8337FA751F4A109F3DCE479EFEDDD77 /* Layout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Layout.swift; path = Sources/iOS/Layout.swift; sourceTree = "<group>"; };
-		AA37DA6533CD1EA6348754CA8FAB53B9 /* com.cosmicmind.material.icons.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.cosmicmind.material.icons.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA37DA6533CD1EA6348754CA8FAB53B9 /* com.cosmicmind.material.icons.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = com.cosmicmind.material.icons.bundle; path = com.cosmicmind.material.icons.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB6DE7FBA93B7486BCC83972FD53904E /* MDCalendarCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCalendarCell.m; path = iOSUILib/iOSUILib/Calendar/MDCalendarCell.m; sourceTree = "<group>"; };
 		AD28F6A41EF84840D8E90B2D3CCE2966 /* Material+UIWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+UIWindow.swift"; path = "Sources/iOS/Material+UIWindow.swift"; sourceTree = "<group>"; };
 		AEEE09FC1080DAAC672AF5B13793A915 /* Material-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Material-umbrella.h"; sourceTree = "<group>"; };
@@ -393,7 +393,7 @@
 		C6093948EE85B25AF251865208936610 /* MDCircularProgressLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCircularProgressLayer.m; path = iOSUILib/iOSUILib/Progress/MDCircularProgressLayer.m; sourceTree = "<group>"; };
 		C7E337CDD43154096F7C800C056AF71C /* HeightPreset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeightPreset.swift; path = Sources/iOS/HeightPreset.swift; sourceTree = "<group>"; };
 		CA2BE0DF4C37E0BACFE50314E47AE200 /* MDCalendar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCalendar.m; path = iOSUILib/iOSUILib/Calendar/MDCalendar.m; sourceTree = "<group>"; };
-		CA56A77F2375DBF9EEBE73E37483A51E /* Material.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Material.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA56A77F2375DBF9EEBE73E37483A51E /* Material.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Material.framework; path = Material.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB64158FBDF613A62FC212CBF88A9F55 /* CollectionViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionViewLayout.swift; path = Sources/iOS/CollectionViewLayout.swift; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CDE0F29AE459A7BF42FDB80B8DDD4FBE /* MDMathHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDMathHelper.m; path = iOSUILib/iOSUILib/Helpers/MDMathHelper.m; sourceTree = "<group>"; };
@@ -411,7 +411,7 @@
 		DA104F233C9DB7515A9C4C11749312C3 /* MDCalendarYearSelector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCalendarYearSelector.m; path = iOSUILib/iOSUILib/Calendar/MDCalendarYearSelector.m; sourceTree = "<group>"; };
 		DB3CE4D2C55CAC34726BB227CA4E72B9 /* MDSliderIcon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDSliderIcon.m; path = iOSUILib/iOSUILib/Slider/MDSliderIcon.m; sourceTree = "<group>"; };
 		DCC2BC512D2DABDAF3CE48180D6B1CFE /* Layer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Layer.swift; path = Sources/iOS/Layer.swift; sourceTree = "<group>"; };
-		DD69AD845F1E312FF6A4335006DC1067 /* Material.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Material.modulemap; sourceTree = "<group>"; };
+		DD69AD845F1E312FF6A4335006DC1067 /* Material.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Material.modulemap; sourceTree = "<group>"; };
 		DEC9E032613845F6044700301DCA0871 /* TableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableView.swift; path = Sources/iOS/TableView.swift; sourceTree = "<group>"; };
 		E22683662E2A8ED3751D3FA852920B83 /* Material-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Material-prefix.pch"; sourceTree = "<group>"; };
 		E375CD368873A6A5B2E7AD5E33C4CD91 /* ToolbarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToolbarController.swift; path = Sources/iOS/ToolbarController.swift; sourceTree = "<group>"; };
@@ -490,6 +490,7 @@
 				79FE83D9E7184E4CBDD03E1B580BA2BA /* Core */,
 				C755DC5D5D3E7B3F3670AD27DF6B4A44 /* Support Files */,
 			);
+			name = Material;
 			path = Material;
 			sourceTree = "<group>";
 		};
@@ -765,6 +766,7 @@
 				D772DC5A7048CC848E6EA8A0B5EA854A /* UIViewHelper.m */,
 				09A2B89074200FE15B5774F1179ED2E0 /* Support Files */,
 			);
+			name = MaterialControls;
 			path = MaterialControls;
 			sourceTree = "<group>";
 		};
