@@ -47,7 +47,8 @@ class AppSearchBarController: SearchBarController {
 extension AppSearchBarController {
     fileprivate func prepareMenuButton() {
         menuButton = IconButton(image: Icon.cm.menu)
-            menuButton.tintColor = Color.white
+        menuButton.tintColor = Color.white
+        menuButton.addTarget(self, action: #selector(handleMenuButton(button:)), for: .touchUpInside)
     }
     
     fileprivate func prepareMoreButton() {
@@ -69,4 +70,10 @@ extension AppSearchBarController {
         searchBar.leftViews = [menuButton]
         searchBar.rightViews = [moreButton]
     }
+    
+    
+    @objc fileprivate func handleMenuButton(button: UIButton) {
+        transition(to: DetailViewController())
+    }
+
 }

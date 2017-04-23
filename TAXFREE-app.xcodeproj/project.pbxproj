@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		6503C3BB1E6DF954007C5BE0 /* Adres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6503C3BA1E6DF954007C5BE0 /* Adres.swift */; };
 		652D32BD1E6AEA26005CF7C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D32BC1E6AEA26005CF7C3 /* AppDelegate.swift */; };
-		652D32BF1E6AEA26005CF7C3 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D32BE1E6AEA26005CF7C3 /* MasterViewController.swift */; };
 		652D32C11E6AEA26005CF7C3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D32C01E6AEA26005CF7C3 /* DetailViewController.swift */; };
 		652D32C41E6AEA26005CF7C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652D32C21E6AEA26005CF7C3 /* Main.storyboard */; };
 		652D32C61E6AEA26005CF7C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 652D32C51E6AEA26005CF7C3 /* Assets.xcassets */; };
@@ -21,6 +20,8 @@
 		652D32F11E6C949C005CF7C3 /* Wystawca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D32F01E6C949C005CF7C3 /* Wystawca.swift */; };
 		65491E551EA68819006B84D2 /* SampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65491E541EA68819006B84D2 /* SampleTableViewCell.swift */; };
 		65491E571EA693AA006B84D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65491E561EA693AA006B84D2 /* ViewController.swift */; };
+		656376921EAD0B1F00D6EFEC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656376901EAD0B1F00D6EFEC /* BaseViewController.swift */; };
+		656376931EAD0B1F00D6EFEC /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656376911EAD0B1F00D6EFEC /* MenuViewController.swift */; };
 		65CE25D81E8D83000001015D /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CE25D71E8D83000001015D /* Validator.swift */; };
 		65D0A20F1E8A9AE000BD4DFB /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0A20E1E8A9AE000BD4DFB /* CheckBox.swift */; };
 		65D5829E1E9E722100C4477C /* AppSearchBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D5829D1E9E722100C4477C /* AppSearchBarController.swift */; };
@@ -52,7 +53,6 @@
 		6503C3BA1E6DF954007C5BE0 /* Adres.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Adres.swift; sourceTree = "<group>"; };
 		652D32B91E6AEA26005CF7C3 /* TAXFREE-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TAXFREE-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		652D32BC1E6AEA26005CF7C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		652D32BE1E6AEA26005CF7C3 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		652D32C01E6AEA26005CF7C3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		652D32C31E6AEA26005CF7C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		652D32C51E6AEA26005CF7C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,6 +69,8 @@
 		652D32F01E6C949C005CF7C3 /* Wystawca.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wystawca.swift; sourceTree = "<group>"; };
 		65491E541EA68819006B84D2 /* SampleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTableViewCell.swift; sourceTree = "<group>"; };
 		65491E561EA693AA006B84D2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		656376901EAD0B1F00D6EFEC /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		656376911EAD0B1F00D6EFEC /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		65CE25D71E8D83000001015D /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		65D0A20E1E8A9AE000BD4DFB /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		65D5829D1E9E722100C4477C /* AppSearchBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSearchBarController.swift; sourceTree = "<group>"; };
@@ -136,7 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				652D32BC1E6AEA26005CF7C3 /* AppDelegate.swift */,
-				652D32BE1E6AEA26005CF7C3 /* MasterViewController.swift */,
+				656376901EAD0B1F00D6EFEC /* BaseViewController.swift */,
+				656376911EAD0B1F00D6EFEC /* MenuViewController.swift */,
 				652D32C01E6AEA26005CF7C3 /* DetailViewController.swift */,
 				65D0A20E1E8A9AE000BD4DFB /* CheckBox.swift */,
 				652D32C21E6AEA26005CF7C3 /* Main.storyboard */,
@@ -371,11 +374,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				65D0A20F1E8A9AE000BD4DFB /* CheckBox.swift in Sources */,
+				656376931EAD0B1F00D6EFEC /* MenuViewController.swift in Sources */,
 				65491E551EA68819006B84D2 /* SampleTableViewCell.swift in Sources */,
 				65CE25D81E8D83000001015D /* Validator.swift in Sources */,
 				652D32C11E6AEA26005CF7C3 /* DetailViewController.swift in Sources */,
 				65D582A01E9EAF1C00C4477C /* AppFABMenuController.swift in Sources */,
-				652D32BF1E6AEA26005CF7C3 /* MasterViewController.swift in Sources */,
+				656376921EAD0B1F00D6EFEC /* BaseViewController.swift in Sources */,
 				652D32ED1E6C7B1B005CF7C3 /* Rachunek.swift in Sources */,
 				6503C3BB1E6DF954007C5BE0 /* Adres.swift in Sources */,
 				65491E571EA693AA006B84D2 /* ViewController.swift in Sources */,

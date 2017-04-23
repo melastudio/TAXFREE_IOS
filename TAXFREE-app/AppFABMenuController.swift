@@ -74,9 +74,6 @@ extension AppFABMenuController {
         fabMenuBacking = .none
 
     }
-}
-
-extension AppFABMenuController {
     
     @objc
     fileprivate func handleNewFABMenuItem(button: UIButton) {

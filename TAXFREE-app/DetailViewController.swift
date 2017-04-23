@@ -156,10 +156,15 @@ extension DetailViewController {
         let button = FABButton(image: Icon.cm.add, tintColor: .white)
         button.pulseColor = .white
         button.backgroundColor = Color.yellow.base
+        button.addTarget(self, action: #selector(handleFABButton(button:)), for: .touchUpInside)
         
         view.layout(button)
             .width(ButtonLayout.Fab.diameter)
             .height(ButtonLayout.Fab.diameter).bottomRight(bottom: 20, right: 20)
+    }
+    
+    @objc fileprivate func handleFABButton(button: UIButton) {
+        print("fabButtonClick2")
     }
 }
 

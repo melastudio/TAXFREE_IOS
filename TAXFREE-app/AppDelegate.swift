@@ -19,15 +19,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let viewController = MasterViewController(nibName: nil, bundle: nil)
         let navigationController = AppSearchBarController(rootViewController: AppFABMenuController(rootViewController: viewController))
         //window!.rootViewController = AppSearchBarController(rootViewController: UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RootViewController"))
-        
+     
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = navigationController
         self.window?.makeKeyAndVisible()
         return true
-    }*/
+    }
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         return true
+    }*/
+    func applicationDidFinishLaunching(_ application: UIApplication) {
+        window = UIWindow(frame: Screen.bounds)
+        window!.rootViewController = AppSearchBarController(rootViewController: UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RootViewController"))
+        window!.makeKeyAndVisible()
     }
 
     
