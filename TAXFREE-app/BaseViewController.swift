@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Material
 
 class BaseViewController: UIViewController, SlideMenuDelegate {
     
@@ -27,13 +28,13 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
         case 0:
             print("Home\n", terminator: "")
 
-            self.openViewControllerBasedOnIdentifier("Home")
+            self.openViewControllerBasedOnIdentifier("RootViewController")
             
             break
         case 1:
-            print("Play\n", terminator: "")
+            //print("Play\n", terminator: "")
             
-            self.openViewControllerBasedOnIdentifier("PlayVC")
+            //self.openViewControllerBasedOnIdentifier("PlayVC")
             
             break
         default:
@@ -42,8 +43,11 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
     }
     
     func openViewControllerBasedOnIdentifier(_ strIdentifier:String){
+        //window!.rootViewController = AppSearchBarController(rootViewController: UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RootViewController"))
+        
         let destViewController : UIViewController = self.storyboard!.instantiateViewController(withIdentifier: strIdentifier)
         
+        //let destViewController : SearchBarController = self.storyboard!.instantiateViewController(withIdentifier: strIdentifier) as! SearchBarController
         let topViewController : UIViewController = self.navigationController!.topViewController!
         
         if (topViewController.restorationIdentifier! == destViewController.restorationIdentifier!){

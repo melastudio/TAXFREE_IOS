@@ -9,10 +9,13 @@
 import UIKit
 import Material
 
-class ViewController: BaseViewController
+class ViewController : BaseViewController
 {
     var seller = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg"]
     var sellerName = ["Test1", "Test2", "Test3", "Test4","Test5","Test6","Test7","Test8"]
+    //var meals = [Meal]()
+    
+    
     @IBOutlet weak var fabButton: FABButton!
     
     @IBOutlet weak var card: Card!
@@ -22,12 +25,11 @@ class ViewController: BaseViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-                // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup after loading the view, typically from a nib.
+        self.addSlideMenuButton()
         prepareFABButton()
         prepareToolbar()
         prepareCard()
-        self.addSlideMenuButton()
-
     }
     
     override func didReceiveMemoryWarning()
@@ -67,11 +69,32 @@ class ViewController: BaseViewController
     {
         if segue.identifier == "DetailSegue"
         {
-            let detailViewController = ((segue.destination) as! DetailViewController)
-            let indexPath = self.tvSellers!.indexPathForSelectedRow!
-            let strImageName = seller[indexPath.row]
+            
+            
+            let detailViewController = ((segue.destination) as! UINavigationController)
+           // let indexPath = self.tvSellers!.indexPathForSelectedRow!
+            //let strImageName = seller[indexPath.row]
             //detailViewController.strImageName = strImageName
-            detailViewController.title = strImageName
+           // detailViewController.title = strImageName
+           // detailViewController.navigationItem.title = "Pasta to One"
+            //let addEventViewController = detailViewController as! DetailViewController
+            
+            //let indexPath = self.tvSellers!.indexPathForSelectedRow!
+            //let strImageName = seller[indexPath.row]
+            //detailViewController.strImageName = strImageName
+            // detailViewController.title = strImageName
+            detailViewController.navigationItem.title = "Pasta to One"
+        }
+    }
+    
+    @IBAction func unwindToRachunekList(sender: UIStoryboardSegue) {
+        if let sourceViewController = sender.source as? DetailViewController, let doktf = sourceViewController.doktf {
+            
+            // Add a new meal.
+            let newIndexPath = IndexPath(row: seller.count, section: 0)
+            
+            sellerName.append((doktf as? String)!)
+            //tableView.insertRows(at: [newIndexPath], with: .automatic)
         }
     }
     

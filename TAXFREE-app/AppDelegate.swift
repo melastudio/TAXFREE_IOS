@@ -31,8 +31,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }*/
     func applicationDidFinishLaunching(_ application: UIApplication) {
         window = UIWindow(frame: Screen.bounds)
-        window!.rootViewController = AppSearchBarController(rootViewController: UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RootViewController"))
+        window!.rootViewController = AppSearchBarController(rootViewController: UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "InitViewController"))
         window!.makeKeyAndVisible()
+        UIApplication.shared.statusBarStyle = .lightContent
+        UIApplication.shared.statusBarView?.backgroundColor = Color.lightBlue.accent3
+        UINavigationBar.appearance().backgroundColor = Color.lightBlue.accent2
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        UINavigationBar.appearance().tintColor = Color.white
     }
 
     
@@ -59,3 +64,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
+extension UIApplication {
+    var statusBarView: UIView? {
+        return value(forKey: "statusBar") as? UIView
+    }
+}

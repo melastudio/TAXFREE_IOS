@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import os.log
 import Material
 import MaterialControls
 
@@ -20,6 +21,10 @@ struct ButtonLayout {
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    
+    var doktf: Rachunek?
+    
     
     @IBOutlet weak var nipfield: MDTextField!
     @IBOutlet weak var nazwaSprzedawcyfield: MDTextField!
@@ -147,8 +152,30 @@ class DetailViewController: UIViewController {
             self.configureView()
         }
     }
-
     
+    // This method lets you configure a view controller before it's presented.
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        super.prepare(for: segue, sender: sender)
+        
+        // Configure the destination view controller only when the save button is pressed.
+        guard let button = sender as? UIBarButtonItem, button === saveButton else {
+            os_log("The save button was not pressed, cancelling", log: OSLog.default, type: .debug)
+            return
+        }
+        
+        //let name = nameTextField.text ?? ""
+        //let photo = photoImageView.image
+        //let rating = ratingControl.rating
+        
+        // Set the meal to be passed to MealTableViewController after the unwind segue.
+        //meal = Meal(name: name, photo: photo, rating: rating)
+    }
+    
+    @IBAction func cancel(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
 }
 
 extension DetailViewController {

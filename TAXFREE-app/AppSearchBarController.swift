@@ -57,8 +57,8 @@ extension AppSearchBarController {
     }
     
     fileprivate func prepareStatusBar() {
-        statusBarStyle = .lightContent
-        statusBar.backgroundColor = Color.lightBlue.accent3
+       //statusBarStyle = .lightContent
+        //statusBar.backgroundColor = Color.lightBlue.accent3
     }
 
     
