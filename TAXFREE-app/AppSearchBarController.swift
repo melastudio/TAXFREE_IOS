@@ -73,7 +73,7 @@ extension AppSearchBarController {
     
     
     @objc fileprivate func handleMenuButton(button: UIButton) {
-        transition(to: DetailViewController())
+        ViewController().showSwipeMenu()
     }
 
 }

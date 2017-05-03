@@ -9,7 +9,7 @@
 import UIKit
 import Material
 
-class ViewController : BaseViewController
+class ViewController : UIViewController
 {
     var seller = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg"]
     var sellerName = ["Test1", "Test2", "Test3", "Test4","Test5","Test6","Test7","Test8"]
@@ -25,8 +25,6 @@ class ViewController : BaseViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        self.addSlideMenuButton()
         prepareFABButton()
         prepareToolbar()
         prepareCard()
@@ -98,6 +96,10 @@ class ViewController : BaseViewController
         }
     }
     
+    func showSwipeMenu()
+    {
+        print("showSwipeMenu")
+    }
 }
 
 extension ViewController {
