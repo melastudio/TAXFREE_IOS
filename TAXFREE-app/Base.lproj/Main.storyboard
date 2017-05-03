@@ -535,17 +535,27 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5W6-xr-n8n">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.89892945469999996" green="0.89892945469999996" blue="0.89892945469999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="5W6-xr-n8n" firstAttribute="top" secondItem="WpU-rN-f6V" secondAttribute="top" id="CIj-BW-XyW"/>
                             <constraint firstItem="SZr-x9-ov5" firstAttribute="top" secondItem="WpU-rN-f6V" secondAttribute="topMargin" id="E2J-Vn-r5h"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SZr-x9-ov5" secondAttribute="trailing" constant="-16" id="HNw-vK-dcb"/>
                             <constraint firstItem="SZr-x9-ov5" firstAttribute="leading" secondItem="WpU-rN-f6V" secondAttribute="leadingMargin" constant="-16" id="RhY-Cc-cYQ"/>
+                            <constraint firstItem="HMs-eO-zZH" firstAttribute="top" secondItem="5W6-xr-n8n" secondAttribute="bottom" id="Rwl-lE-uhu"/>
+                            <constraint firstItem="5W6-xr-n8n" firstAttribute="leading" secondItem="WpU-rN-f6V" secondAttribute="leading" id="YZN-fv-K2y"/>
+                            <constraint firstAttribute="trailing" secondItem="5W6-xr-n8n" secondAttribute="trailing" id="ieI-8r-ztk"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="btd-lX-dRF"/>
                     <connections>
                         <outlet property="card" destination="CYb-Gn-1jT" id="wVD-iI-dSF"/>
+                        <outlet property="leadingConstraint" destination="YZN-fv-K2y" id="Owm-kI-cYI"/>
+                        <outlet property="trailingConstraint" destination="ieI-8r-ztk" id="JVt-tA-e9K"/>
                         <outlet property="tvSellers" destination="KDj-s6-CGT" id="Tob-q3-dEp"/>
                     </connections>
                 </viewController>

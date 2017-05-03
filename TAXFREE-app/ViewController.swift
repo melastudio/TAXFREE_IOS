@@ -21,6 +21,9 @@ class ViewController : UIViewController
     @IBOutlet weak var card: Card!
     @IBOutlet var tvSellers: UITableView?
     fileprivate var toolbar: Toolbar!
+    @IBOutlet weak var trailingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
+    var showMenu = false
     
     override func viewDidLoad()
     {
@@ -99,6 +102,9 @@ class ViewController : UIViewController
     func showSwipeMenu()
     {
         print("showSwipeMenu")
+        trailingConstraint.constant=0
+        leadingConstraint.constant=0
+        showMenu = !showMenu
     }
 }
 
