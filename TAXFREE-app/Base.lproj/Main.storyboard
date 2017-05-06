@@ -536,7 +536,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5W6-xr-n8n">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -548,7 +548,7 @@
                             <constraint firstItem="SZr-x9-ov5" firstAttribute="leading" secondItem="WpU-rN-f6V" secondAttribute="leadingMargin" constant="-16" id="RhY-Cc-cYQ"/>
                             <constraint firstItem="HMs-eO-zZH" firstAttribute="top" secondItem="5W6-xr-n8n" secondAttribute="bottom" id="Rwl-lE-uhu"/>
                             <constraint firstItem="5W6-xr-n8n" firstAttribute="leading" secondItem="WpU-rN-f6V" secondAttribute="leading" id="YZN-fv-K2y"/>
-                            <constraint firstAttribute="trailing" secondItem="5W6-xr-n8n" secondAttribute="trailing" id="ieI-8r-ztk"/>
+                            <constraint firstAttribute="trailing" secondItem="5W6-xr-n8n" secondAttribute="trailing" constant="275" id="ieI-8r-ztk"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="btd-lX-dRF"/>

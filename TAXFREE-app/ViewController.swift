@@ -28,6 +28,8 @@ class ViewController : UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        trailingConstraint.constant = 100
+        leadingConstraint.constant = -100
         prepareFABButton()
         prepareToolbar()
         prepareCard()
@@ -101,9 +103,19 @@ class ViewController : UIViewController
     
     func showSwipeMenu()
     {
-        print("showSwipeMenu")
-        trailingConstraint.constant=0
-        leadingConstraint.constant=0
+        //print("showSwipeMenu")
+        if (showMenu) {
+            trailingConstraint.constant = 0
+            leadingConstraint.constant = 0
+        }
+        else {
+            trailingConstraint.constant = 100
+            leadingConstraint.constant = -100
+        }
+        UIView.animate(withDuration : 0.3, animations: {
+            self.view.layoutIfNeeded()
+        })
+        
         showMenu = !showMenu
     }
 }
