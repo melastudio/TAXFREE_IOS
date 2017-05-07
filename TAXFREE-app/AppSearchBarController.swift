@@ -74,6 +74,5 @@ extension AppSearchBarController {
     
     @objc fileprivate func handleMenuButton(button: UIButton) {
         (rootViewController as? ViewController)?.showSwipeMenu()
-        //ViewController().showSwipeMenu()
     }
 }

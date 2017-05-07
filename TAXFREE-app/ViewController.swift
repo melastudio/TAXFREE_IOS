@@ -25,11 +25,12 @@ class ViewController : UIViewController
     @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
     var showMenu = false
     
+    
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        trailingConstraint.constant = 100
-        leadingConstraint.constant = -100
+        showSwipeMenu()
         prepareFABButton()
         prepareToolbar()
         prepareCard()
@@ -105,18 +106,27 @@ class ViewController : UIViewController
     {
         //print("showSwipeMenu")
         if (showMenu) {
-            trailingConstraint.constant = 0
-            leadingConstraint.constant = 0
+            trailingConstraint.constant = self.view.width - 100
+            //leadingConstraint.constant = 0
         }
         else {
-            trailingConstraint.constant = 100
-            leadingConstraint.constant = -100
+            trailingConstraint.constant = self.view.width
+            //leadingConstraint.constant = -100// -(self.view.width)
         }
         UIView.animate(withDuration : 0.3, animations: {
             self.view.layoutIfNeeded()
         })
         
         showMenu = !showMenu
+    }
+    
+    @IBAction func nowyClick(_ sender: Any) {
+    }
+    @IBAction func zgloszoneClick(_ sender: Any) {
+    }
+    @IBAction func wpoblizuClick(_ sender: Any) {
+    }
+    @IBAction func ustawieniaClick(_ sender: Any) {
     }
 }
 
