@@ -3,15 +3,20 @@ PODS:
     - Material/Core (= 2.5.2)
   - Material/Core (2.5.2)
   - MaterialControls (1.1.0)
+  - SQLite.swift (0.11.3):
+    - SQLite.swift/standard (= 0.11.3)
+  - SQLite.swift/standard (0.11.3)
 
 DEPENDENCIES:
   - Material (~> 2.0)
   - MaterialControls (~> 1.1.0)
+  - SQLite.swift (~> 0.11.3)
 
 SPEC CHECKSUMS:
   Material: 00ae261fa04dd3f3f8584d07e44ac658fa1bc6fd
   MaterialControls: aaabe6957059da904d5750f1d2ca2eee6f977e01
+  SQLite.swift: 99b36c22084427f0abbeb957556ce1528cf10bb3
 
-PODFILE CHECKSUM: ebc309b8b64269b9cfe73440e0e292f111ee34a6
+PODFILE CHECKSUM: 3a2d49b2c923deca55f0a43e3501fd322a06a729
 
 COCOAPODS: 1.2.0
