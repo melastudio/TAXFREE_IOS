@@ -22,6 +22,7 @@
 		65491E571EA693AA006B84D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65491E561EA693AA006B84D2 /* ViewController.swift */; };
 		656376921EAD0B1F00D6EFEC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656376901EAD0B1F00D6EFEC /* BaseViewController.swift */; };
 		656376931EAD0B1F00D6EFEC /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656376911EAD0B1F00D6EFEC /* MenuViewController.swift */; };
+		65C81CDE1EBF5777000B70E1 /* RachunekDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C81CDD1EBF5777000B70E1 /* RachunekDB.swift */; };
 		65CE25D81E8D83000001015D /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CE25D71E8D83000001015D /* Validator.swift */; };
 		65D0A20F1E8A9AE000BD4DFB /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0A20E1E8A9AE000BD4DFB /* CheckBox.swift */; };
 		65D5829E1E9E722100C4477C /* AppSearchBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D5829D1E9E722100C4477C /* AppSearchBarController.swift */; };
@@ -71,6 +72,7 @@
 		65491E561EA693AA006B84D2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		656376901EAD0B1F00D6EFEC /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		656376911EAD0B1F00D6EFEC /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		65C81CDD1EBF5777000B70E1 /* RachunekDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RachunekDB.swift; sourceTree = "<group>"; };
 		65CE25D71E8D83000001015D /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		65D0A20E1E8A9AE000BD4DFB /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		65D5829D1E9E722100C4477C /* AppSearchBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSearchBarController.swift; sourceTree = "<group>"; };
@@ -137,7 +139,6 @@
 		652D32BB1E6AEA26005CF7C3 /* TAXFREE-app */ = {
 			isa = PBXGroup;
 			children = (
-				652D32BC1E6AEA26005CF7C3 /* AppDelegate.swift */,
 				656376901EAD0B1F00D6EFEC /* BaseViewController.swift */,
 				656376911EAD0B1F00D6EFEC /* MenuViewController.swift */,
 				652D32C01E6AEA26005CF7C3 /* DetailViewController.swift */,
@@ -155,6 +156,8 @@
 				65D5829F1E9EAF1C00C4477C /* AppFABMenuController.swift */,
 				65491E541EA68819006B84D2 /* SampleTableViewCell.swift */,
 				65491E561EA693AA006B84D2 /* ViewController.swift */,
+				652D32BC1E6AEA26005CF7C3 /* AppDelegate.swift */,
+				65C81CDD1EBF5777000B70E1 /* RachunekDB.swift */,
 			);
 			path = "TAXFREE-app";
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				65D0A20F1E8A9AE000BD4DFB /* CheckBox.swift in Sources */,
 				656376931EAD0B1F00D6EFEC /* MenuViewController.swift in Sources */,
 				65491E551EA68819006B84D2 /* SampleTableViewCell.swift in Sources */,
+				65C81CDE1EBF5777000B70E1 /* RachunekDB.swift in Sources */,
 				65CE25D81E8D83000001015D /* Validator.swift in Sources */,
 				652D32C11E6AEA26005CF7C3 /* DetailViewController.swift in Sources */,
 				65D582A01E9EAF1C00C4477C /* AppFABMenuController.swift in Sources */,

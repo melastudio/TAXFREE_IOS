@@ -13,7 +13,7 @@ class ViewController : UIViewController
 {
     var seller = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg"]
     var sellerName = ["Test1", "Test2", "Test3", "Test4","Test5","Test6","Test7","Test8"]
-    //var meals = [Meal]()
+    private var dokumenty = [Rachunek]()
     
     
     @IBOutlet weak var fabButton: FABButton!
@@ -99,6 +99,12 @@ class ViewController : UIViewController
             
             sellerName.append((doktf as? String)!)
             //tableView.insertRows(at: [newIndexPath], with: .automatic)
+            if let id = RachunekDB.instance.addPodrozny(Imie: "", Nazwisko: "", nrPaszportu: "") {
+                // Add contact in the tableview
+                //...
+                //StephencelisDB.instance.updateContact(id, newContact: contact)
+                //StephencelisDB.instance.deleteContact(contacts[selectedContact].id!)
+            }
         }
     }
     
@@ -153,6 +159,7 @@ extension ViewController {
     }
 
     fileprivate func prepareCard() {
+        //dokumenty = StephencelisDB.instance.getContacts()
         card.toolbar = toolbar
         card.contentView = tvSellers
         view.layout(card).horizontally(left: 10, right: 10).center()
