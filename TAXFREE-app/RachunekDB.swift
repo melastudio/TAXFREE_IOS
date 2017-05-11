@@ -35,12 +35,16 @@ class RachunekDB {
     private let podrozny = Expression<Int64>("idpodrozny")
     private let nrRachunku = Expression<String?>("nrrachunku")
     private let wartosc = Expression<Float64>("wartosc")
-    private let kodWaluty = Expression<Waluta>("waluta")
-    private let dataWystawienia = Expression<NSDate>("datawystawienia")
+    private let kodWaluty = Expression<String?>("waluta")
+    private let dataWystawienia = Expression<DateTime>("datawystawienia")
     private let listaAsortymentu = Expression<String?>("listaasortymentu")
     private let opisAsortymentu = Expression<String?>("opisasortymentu")
     private let datazgloszenia = Expression<NSDate>("datazgloszenia")
     
+    private let ustawienia = Table("ustawienia")
+    private let ver = Expression<String>("ver")
+    private let lang = Expression<String>("lang")
+
     
     private init() {
         let path = NSSearchPathForDirectoriesInDomains(
@@ -54,13 +58,19 @@ class RachunekDB {
             print ("Unable to open database")
         }
         
+        createTableUstawienia()
+        addUpdateUstawienia(Ver: "1.00", Lang: "pl")
         createTablePodrozny()
+        createTableSklep()
+        createTableRachunek()
+        
     }
     
     func createTablePodrozny() {
         do {
             try db!.run(podrozni.create(ifNotExists: true) { table in
                 table.column(id, primaryKey: true)
+                //table.column(id, primaryKey: .Autoincrement)
                 table.column(imie)
                 table.column(nazwisko)
                 table.column(nrpaszportu, unique: true)
@@ -72,7 +82,7 @@ class RachunekDB {
     
     func createTableSklep() {
         do {
-            try db!.run(dokumentyTF.create(ifNotExists: true) { table in
+            try db!.run(sklepy.create(ifNotExists: true) { table in
                 table.column(ids, primaryKey: true)
                 table.column(nazwa)
                 table.column(nip)
@@ -90,7 +100,7 @@ class RachunekDB {
 
     func createTableRachunek() {
         do {
-            try db!.run(sklepy.create(ifNotExists: true) { table in
+            try db!.run(dokumentyTF.create(ifNotExists: true) { table in
                 table.column(idr, primaryKey: true)
                 table.column(wystawca)
                 table.column(podrozny)
@@ -103,7 +113,30 @@ class RachunekDB {
                 table.column(datazgloszenia)
             })
         } catch {
-            print("Unable to create table wystawca")
+            print("Unable to create table rachunek")
+        }
+    }
+    
+    func createTableUstawienia() {
+        do {
+            try db!.run(ustawienia.create(ifNotExists: true) { table in
+                table.column(ver)
+                table.column(lang)
+            })
+        } catch {
+            print("Unable to create table ustawienia")
+        }
+    }
+    
+    func addUpdateUstawienia(Ver: String, Lang: String) -> Void? {
+        do {
+            let insert = ustawienia.insert(ver <- Ver, lang <- Lang)
+            try db!.run(insert)
+            print(insert.asSQL())
+            //return 1
+        } catch {
+            print("Insert failed to podrozny")
+            //return -1
         }
     }
     
@@ -129,6 +162,39 @@ class RachunekDB {
         } catch {
             print("Insert failed to wystawca")
             return -1
+        }
+    }
+    
+    func addRachunek(Imie: String, Nazwisko: String, nrPaszportu: String, Nazwa: String, Nip: String, Ulica: String, NrBudynku: String, NrLokalu: String, Miejscowosc: String, KodPocztowy: String, Poczta: String, NrRachunku: String, Wartosc: Float64, KodWaluty: String, DataWystawienia:NSDate, ListaAsortymentu: String, OpisAsortymentu:String, Datazgloszenia: NSDate) -> Int64? {
+        do {
+            let insert = dokumentyTF.insert(wystawca <- addPodrozny(Imie: Imie, Nazwisko: Nazwisko, nrPaszportu: nrPaszportu)!, podrozny <- addSklep(Nazwa: Nazwa, Nip: Nip, Ulica: Ulica, NrBudynku: NrBudynku, NrLokalu: NrLokalu, Miejscowosc: Miejscowosc, KodPocztowy: KodPocztowy, Poczta: Poczta), nrRachunku <- NrRachunku, wartosc <- Wartosc, kodWaluty <- KodWaluty, dataWystawienia<-DataWystawienia, listaAsortymentu<-ListaAsortymentu, opisAsortymentu<-OpisAsortymentu, datazgloszenia<-Datazgloszenia)
+            let id = try db!.run(insert)
+            print(insert.asSQL())
+            return id
+        } catch {
+            print("Insert failed to rachunek")
+            return -1
+        }
+    }
+    
+    func addUpdateUstawienia(Ver: String, Lang: String) -> Void? {
+        try db?.transaction {
+            let update = try db!.scalar(self.ustawienia.count)
+            if update==0 {
+                do {
+                    let insert = ustawienia.insert(self.ver <- Ver, self.lang <- Lang)
+                    try self.db!.run(insert)
+                    print(insert.asSQL())
+                    //return 1
+                } catch {
+                    print("Insert failed to ustawienia")
+                    //return -1
+                }
+            }
+            else {
+                try self.db!.run(ustawienia.update(self.ver <- Ver, self.lang <- Lang))
+                print("updated ustawienia")
+            }
         }
     }
     
@@ -179,3 +245,23 @@ class RachunekDB {
         return false
     }
 }
+
+/*extension Date: Value {
+    class var declaredDatatype: String {
+        return String.declaredDatatype
+    }
+    class func fromDatatypeValue(stringValue: String) -> Date {
+        return SQLDateFormatter.dateFromString(stringValue)!
+    }
+    var datatypeValue: String {
+        return SQLDateFormatter.stringFromDate(self)
+    }
+}
+
+let SQLDateFormatter: DateFormatter = {
+    let formatter = DateFormatter()
+    formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
+    formatter.locale = Locale(localeIdentifier: "en_US_POSIX")
+    formatter.timeZone = TimeZone(forSecondsFromGMT: 0)
+    return formatter
+}()*/
