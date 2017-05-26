@@ -9,14 +9,16 @@
 import Foundation
 
 class Podrozny {
-    var imie:String?
-    var nazwisko:String?
-    var nrPaszportu:String?
+    var id:Int64
+    var imie:String
+    var nazwisko:String
+    var nrPaszportu:String
     
-    init(imie: String,nazwisko: String,nrPaszportu:String) {
-        self.imie = imie
-        self.nazwisko = nazwisko
-        self.nrPaszportu = nrPaszportu
+    init(Id: Int64, Imie: String,Nazwisko: String,NrPaszportu:String) {
+        self.id=Id
+        self.imie = Imie
+        self.nazwisko = Nazwisko
+        self.nrPaszportu = NrPaszportu
     }
 
 }

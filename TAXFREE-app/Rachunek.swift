@@ -10,21 +10,21 @@ import Foundation
 
 //https://granica.gov.pl/TaxFree/Services/ModulSprzedazy_v1.wsdl
 
-enum Waluta {
+enum Waluta: String {
     case PLN, EUR, CHF, GBP
 }
 
 class Rachunek {
     var wystawca: Wystawca
     var podrozny: Podrozny
-    var nrRachunku: String?
-    var wartosc: Float32?
-    var kodWaluty: Waluta?
-    var dataWystawienia:NSDate?
-    var listaAsortymentu: [String]=[]
-    var opisAsortymentu:String?
+    var nrRachunku: String
+    var wartosc: Double
+    var kodWaluty: Waluta
+    var dataWystawienia:String
+    var listaAsortymentu: [String] = []
+    var opisAsortymentu:String
     
-    init(wystawca: Wystawca,podrozny: Podrozny, nrRachunku: String,wartosc: Float32,kodWaluty:Waluta,dataWystawienia:NSDate,listaAsortymentu: [String],opisAsortymentu:String) {
+    init(wystawca: Wystawca,podrozny: Podrozny, nrRachunku: String, wartosc: Double, kodWaluty: Waluta, dataWystawienia: String,listaAsortymentu: [String], opisAsortymentu: String) {
         self.wystawca = wystawca
         self.podrozny=podrozny
         self.nrRachunku=nrRachunku

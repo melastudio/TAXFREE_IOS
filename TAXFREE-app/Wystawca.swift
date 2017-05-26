@@ -9,13 +9,15 @@
 import Foundation
 
 class Wystawca {
-    var nazwa:String?
-    var NIP:String?
-    var adres:Adres?
+    var id:Int64
+    var nazwa:String
+    var NIP:String
+    var adres:Adres
     
-    init(nazwa:String,NIP:String,adres:Adres) {
-        self.nazwa = nazwa
+    init(Id: Int64, Nazwa:String, NIP:String, Adres:Adres) {
+        self.id = Id
+        self.nazwa = Nazwa
         self.NIP = NIP
-        self.adres = adres
+        self.adres = Adres
     }
 }

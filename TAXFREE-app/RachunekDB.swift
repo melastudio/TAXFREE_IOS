@@ -14,32 +14,32 @@ class RachunekDB {
     private let db: Connection?
     private let podrozni = Table("podrozny")
     private let id = Expression<Int64>("id")
-    private let imie = Expression<String?>("imie")
+    private let imiep = Expression<String>("imie")
     private let nazwisko = Expression<String>("nazwisko")
     private let nrpaszportu = Expression<String>("nrpaszportu")
     
     private let sklepy = Table("wystawca")
     private let ids = Expression<Int64>("id")
-    private let nazwa = Expression<String?>("nazwa")
-    private let nip = Expression<String?>("nip")
-    private let ulica = Expression<String?>("ulica")
-    private let nrBudynku = Expression<String?>("nrBudynku")
-    private let nrLokalu = Expression<String?>("nrLokalu")
-    private let miejscowosc = Expression<String?>("miejscowosc")
-    private let kodPocztowy = Expression<String?>("kodPocztowy")
-    private let poczta = Expression<String?>("poczta")
+    private let nazwa = Expression<String>("nazwa")
+    private let nip = Expression<String>("nip")
+    private let ulica = Expression<String>("ulica")
+    private let nrBudynku = Expression<String>("nrBudynku")
+    private let nrLokalu = Expression<String>("nrLokalu")
+    private let miejscowosc = Expression<String>("miejscowosc")
+    private let kodPocztowy = Expression<String>("kodPocztowy")
+    private let poczta = Expression<String>("poczta")
     
     private let dokumentyTF = Table("rachunek")
     private let idr = Expression<Int64>("id")
-    private let wystawca = Expression<Int64>("idwystawcy")
-    private let podrozny = Expression<Int64>("idpodrozny")
-    private let nrRachunku = Expression<String?>("nrrachunku")
-    private let wartosc = Expression<Float64>("wartosc")
-    private let kodWaluty = Expression<String?>("waluta")
-    private let dataWystawienia = Expression<DateTime>("datawystawienia")
-    private let listaAsortymentu = Expression<String?>("listaasortymentu")
-    private let opisAsortymentu = Expression<String?>("opisasortymentu")
-    private let datazgloszenia = Expression<NSDate>("datazgloszenia")
+    private let idwystawca = Expression<Int64>("idwystawcy")
+    private let idpodrozny = Expression<Int64>("idpodrozny")
+    private let nrRachunku = Expression<String>("nrrachunku")
+    private let wartoscd = Expression<Double>("wartosc")
+    private let kodWaluty = Expression<String>("waluta")
+    private let dataWystawienia = Expression<String>("datawystawienia")
+    private let listaAsortymentu = Expression<String>("listaasortymentu")
+    private let opisAsortymentu = Expression<String>("opisasortymentu")
+    private let dataZgloszenia = Expression<String>("datazgloszenia")
     
     private let ustawienia = Table("ustawienia")
     private let ver = Expression<String>("ver")
@@ -71,7 +71,7 @@ class RachunekDB {
             try db!.run(podrozni.create(ifNotExists: true) { table in
                 table.column(id, primaryKey: true)
                 //table.column(id, primaryKey: .Autoincrement)
-                table.column(imie)
+                table.column(imiep)
                 table.column(nazwisko)
                 table.column(nrpaszportu, unique: true)
             })
@@ -102,18 +102,18 @@ class RachunekDB {
         do {
             try db!.run(dokumentyTF.create(ifNotExists: true) { table in
                 table.column(idr, primaryKey: true)
-                table.column(wystawca)
-                table.column(podrozny)
+                table.column(idwystawca)
+                table.column(idpodrozny)
                 table.column(nrRachunku)
-                table.column(wartosc)
+                table.column(wartoscd)
                 table.column(kodWaluty)
                 table.column(dataWystawienia)
                 table.column(listaAsortymentu)
                 table.column(opisAsortymentu)
-                table.column(datazgloszenia)
+                table.column(dataZgloszenia)
             })
         } catch {
-            print("Unable to create table rachunek")
+            print("Unable to create table rachunek: \(error)")
         }
     }
     
@@ -124,18 +124,18 @@ class RachunekDB {
                 table.column(lang)
             })
         } catch {
-            print("Unable to create table ustawienia")
+            print("Unable to create table ustawienia: \(error)")
         }
     }
     
-    func addUpdateUstawienia(Ver: String, Lang: String) -> Void? {
+    func addUpdateUstawienia(Ver: String, Lang: String) {
         do {
             let insert = ustawienia.insert(ver <- Ver, lang <- Lang)
             try db!.run(insert)
             print(insert.asSQL())
             //return 1
         } catch {
-            print("Insert failed to podrozny")
+            print("Insert failed to podrozny: \(error)")
             //return -1
         }
     }
@@ -143,12 +143,12 @@ class RachunekDB {
 
     func addPodrozny(Imie: String, Nazwisko: String, nrPaszportu: String) -> Int64? {
         do {
-            let insert = podrozni.insert(imie <- Imie, nazwisko <- Nazwisko, nrpaszportu <- nrPaszportu)
+            let insert = podrozni.insert(imiep <- Imie, nazwisko <- Nazwisko, nrpaszportu <- nrPaszportu)
             let id = try db!.run(insert)
             print(insert.asSQL())
             return id
         } catch {
-            print("Insert failed to podrozny")
+            print("Insert failed to podrozny: \(error)")
             return -1
         }
     }
@@ -160,41 +160,53 @@ class RachunekDB {
             print(insert.asSQL())
             return id
         } catch {
-            print("Insert failed to wystawca")
+            print("Insert failed to wystawca: \(error)")
             return -1
         }
     }
     
-    func addRachunek(Imie: String, Nazwisko: String, nrPaszportu: String, Nazwa: String, Nip: String, Ulica: String, NrBudynku: String, NrLokalu: String, Miejscowosc: String, KodPocztowy: String, Poczta: String, NrRachunku: String, Wartosc: Float64, KodWaluty: String, DataWystawienia:NSDate, ListaAsortymentu: String, OpisAsortymentu:String, Datazgloszenia: NSDate) -> Int64? {
+    func addRachunek(Imier: String, Nazwiskor: String, nrPaszportur: String, Nazwar: String, Nipr: String, Ulicar: String, NrBudynkur: String, NrLokalur: String, Miejscowoscr: String, KodPocztowyr: String, Pocztar: String, NrRachunkur: String, Wartoscr: Float64, KodWalutyr: String, DataWystawieniar: String, ListaAsortymentur: String, OpisAsortymentur:String, Datazgloszeniar: String) -> Int64? {
         do {
-            let insert = dokumentyTF.insert(wystawca <- addPodrozny(Imie: Imie, Nazwisko: Nazwisko, nrPaszportu: nrPaszportu)!, podrozny <- addSklep(Nazwa: Nazwa, Nip: Nip, Ulica: Ulica, NrBudynku: NrBudynku, NrLokalu: NrLokalu, Miejscowosc: Miejscowosc, KodPocztowy: KodPocztowy, Poczta: Poczta), nrRachunku <- NrRachunku, wartosc <- Wartosc, kodWaluty <- KodWaluty, dataWystawienia<-DataWystawienia, listaAsortymentu<-ListaAsortymentu, opisAsortymentu<-OpisAsortymentu, datazgloszenia<-Datazgloszenia)
+            let insert = dokumentyTF.insert(idwystawca <- self.addSklep(Nazwa: Nazwar, Nip: Nipr, Ulica: Ulicar, NrBudynku: NrBudynkur, NrLokalu: NrLokalur, Miejscowosc: Miejscowoscr, KodPocztowy: KodPocztowyr, Poczta: Pocztar)!, idpodrozny <- self.addPodrozny(Imie: Imier, Nazwisko: Nazwiskor, nrPaszportu: nrPaszportur)!, nrRachunku <- NrRachunkur, wartoscd <- Wartoscr, kodWaluty <- KodWalutyr, dataWystawienia <- DataWystawieniar, listaAsortymentu <- ListaAsortymentur, opisAsortymentu <- OpisAsortymentur, dataZgloszenia <- Datazgloszeniar)
             let id = try db!.run(insert)
             print(insert.asSQL())
             return id
         } catch {
-            print("Insert failed to rachunek")
+            print("Insert failed to rachunek: \(error)")
             return -1
         }
     }
     
-    func addUpdateUstawienia(Ver: String, Lang: String) -> Void? {
-        try db?.transaction {
-            let update = try db!.scalar(self.ustawienia.count)
-            if update==0 {
-                do {
-                    let insert = ustawienia.insert(self.ver <- Ver, self.lang <- Lang)
-                    try self.db!.run(insert)
-                    print(insert.asSQL())
-                    //return 1
-                } catch {
-                    print("Insert failed to ustawienia")
+    func addUpdateUstawienia(Vers: String, Lang: String) {
+        do {
+            try db!.transaction
+            {
+                let update = try self.db!.scalar(self.ustawienia.count)
+                if update==0 {
+                    do {
+                        let insert = self.ustawienia.insert(self.ver <- Vers, self.lang <- Lang)
+                        try self.db!.run(insert)
+                        print(insert.asSQL())
+                        //return 1
+                    } catch {
+                        
+                        print("Insert failed to ustawienia")
                     //return -1
+                    }
+                }
+                else {
+                    do {
+                        try self.db!.run(self.self.ustawienia.update(self.ver <- Vers, self.lang <- Lang))
+                        print("Updated ustawienia")
+                    } catch {
+                        
+                        print("Update failed to ustawienia")
+                    }
                 }
             }
-            else {
-                try self.db!.run(ustawienia.update(self.ver <- Ver, self.lang <- Lang))
-                print("updated ustawienia")
-            }
+
+        } catch {
+            print("transaction failed: \(error)")
         }
     }
     
@@ -204,10 +216,10 @@ class RachunekDB {
         do {
             for podrozny in try db!.prepare(self.podrozni) {
                 podrozni.append(Podrozny(
-                    id: podrozny[id]!,
-                    imie: podrozny[imie]!,
-                    nazwisko: podrozny[nazwisko],
-                    nrPaszportu: podrozny[nrpaszportu]))
+                    Id: podrozny[id],
+                    Imie: podrozny[imiep],
+                    Nazwisko: podrozny[nazwisko],
+                    NrPaszportu: podrozny[nrpaszportu]))
             }
         } catch {
             print("Select failed from podrozny")
@@ -216,10 +228,33 @@ class RachunekDB {
         return podrozni
     }
     
+    func getPodrozny(cid: Int64) -> Podrozny {
+            let podrozny = podrozni.filter(id == cid)
+        return Podrozny(Id: cid, Imie: String(describing: podrozny[imiep]) , Nazwisko: String(describing: podrozny[nazwisko]), NrPaszportu: String(describing: podrozny[nrpaszportu]))
+    }
+    
+    func getWystawca(cid: Int64) -> Wystawca {
+        let sklep = sklepy.filter(ids == cid)
+        return Wystawca(Id: cid, Nazwa: String(describing: sklep[nazwa]), NIP: String(describing: sklep[nip]), Adres: Adres (Ulica: String(describing: sklep[ulica]),NrBudynku: String(describing: sklep[nrBudynku]), NrLokalu: String(describing: sklep[nrLokalu]), Miejscowosc: String(describing: sklep[miejscowosc]), KodPocztowy: String(describing: sklep[kodPocztowy]),Poczta: String(describing: sklep[poczta])))
+    }
+    
+    func getRachunki() -> [Rachunek] {
+        var rachunki = [Rachunek]()
+        
+        do {
+            for rachunek in try db!.prepare(self.dokumentyTF) {
+                rachunki.append(Rachunek(wystawca: getWystawca(cid: rachunek[idwystawca]), podrozny: getPodrozny(cid: rachunek[idpodrozny]),nrRachunku: rachunek[nrRachunku],wartosc: rachunek[wartoscd],kodWaluty: Waluta(rawValue: String(describing: rachunek[kodWaluty]))!,dataWystawienia: String(describing: rachunek[dataWystawienia]), listaAsortymentu: [rachunek[listaAsortymentu]], opisAsortymentu: String(describing: rachunek[opisAsortymentu])))}
+        } catch {
+            print("Select failed from rachunek")
+        }
+        
+        return rachunki
+    }
+    
     func deletePodrozny(cid: Int64) -> Bool {
         do {
             let podrozny = podrozni.filter(id == cid)
-            try db!.run(podrozni.delete())
+            try db!.run(podrozny.delete())
             return true
         } catch {
             print("Delete failed from podrozny")
@@ -231,9 +266,9 @@ class RachunekDB {
         let podrozny = podrozni.filter(id == cid)
         do {
             let update = podrozny.update([
-                imie <- newPodrozny.imie,
-                nazwisko <- newPodrozny.nazwisko!,
-                nrpaszportu <- newPodrozny.nrPaszportu!
+                imiep <- newPodrozny.imie,
+                nazwisko <- newPodrozny.nazwisko,
+                nrpaszportu <- newPodrozny.nrPaszportu
                 ])
             if try db!.run(update) > 0 {
                 return true

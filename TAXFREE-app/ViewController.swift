@@ -11,9 +11,9 @@ import Material
 
 class ViewController : UIViewController
 {
-    var seller = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg"]
-    var sellerName = ["Test1", "Test2", "Test3", "Test4","Test5","Test6","Test7","Test8"]
-    private var dokumenty = [Rachunek]()
+    //var seller = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg"]
+    //var sellerName = ["Test1", "Test2", "Test3", "Test4","Test5","Test6","Test7","Test8"]
+    var dokumenty = [Rachunek]()
     
     
     @IBOutlet weak var fabButton: FABButton!
@@ -24,8 +24,6 @@ class ViewController : UIViewController
     @IBOutlet weak var trailingConstraint: NSLayoutConstraint!
     @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
     var showMenu = false
-    
-    
     
     override func viewDidLoad()
     {
@@ -52,7 +50,7 @@ class ViewController : UIViewController
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         //make sure you use the relevant array sizes
-        return seller.count
+        return dokumenty.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell
@@ -62,10 +60,9 @@ class ViewController : UIViewController
         {
             cell = Bundle.main.loadNibNamed("Cell", owner: self, options: nil)?[0] as! SampleTableViewCell;
         }
-        let stringTitle = sellerName[indexPath.row] as String //NOT NSString
-        let strCarName = seller[indexPath.row] as String
-        cell.LblTitle.text=stringTitle
-        cell.lvPhoto.image = UIImage(named: strCarName)
+        let rachunek = dokumenty[indexPath.row] as Rachunek //NOT NSString
+        cell.LblTitle.text = rachunek.wystawca.nazwa
+        cell.lvPhoto.image = UIImage(named: rachunek.listaAsortymentu[0])
         return cell as SampleTableViewCell
     }
     
@@ -95,16 +92,16 @@ class ViewController : UIViewController
         if let sourceViewController = sender.source as? DetailViewController, let doktf = sourceViewController.doktf {
             
             // Add a new meal.
-            let newIndexPath = IndexPath(row: seller.count, section: 0)
+            let newIndexPath = IndexPath(row: dokumenty.count, section: 0)
             
-            sellerName.append((doktf as? String)!)
+            dokumenty.append((doktf as? Rachunek)!)
             //tableView.insertRows(at: [newIndexPath], with: .automatic)
-            if let id = RachunekDB.instance.addPodrozny(Imie: "", Nazwisko: "", nrPaszportu: "") {
+            //if RachunekDB.instance.addPodrozny(Imie: "", Nazwisko: "", nrPaszportu: "") != nil {
                 // Add contact in the tableview
                 //...
                 //StephencelisDB.instance.updateContact(id, newContact: contact)
                 //StephencelisDB.instance.deleteContact(contacts[selectedContact].id!)
-            }
+            //}
         }
     }
     
@@ -159,7 +156,7 @@ extension ViewController {
     }
 
     fileprivate func prepareCard() {
-        //dokumenty = StephencelisDB.instance.getContacts()
+        self.dokumenty = RachunekDB.instance.getRachunki()
         card.toolbar = toolbar
         card.contentView = tvSellers
         view.layout(card).horizontally(left: 10, right: 10).center()

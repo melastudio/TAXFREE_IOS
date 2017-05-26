@@ -16,13 +16,13 @@ class Adres {
     var kodPocztowy:String?
     var poczta:String?
     
-    init(ulica:String,nrBudynku:String,nrLokalu:String,miejscowosc:String,kodPocztowy:String,poczta:String) {
-        self.ulica = ulica
-        self.nrBudynku = nrBudynku
-        self.nrLokalu = nrLokalu
-        self.miejscowosc = miejscowosc
-        self.kodPocztowy = kodPocztowy
-        self.poczta = poczta
+    init(Ulica:String,NrBudynku:String,NrLokalu:String,Miejscowosc:String,KodPocztowy:String,Poczta:String) {
+        self.ulica = Ulica
+        self.nrBudynku = NrBudynku
+        self.nrLokalu = NrLokalu
+        self.miejscowosc = Miejscowosc
+        self.kodPocztowy = KodPocztowy
+        self.poczta = Poczta
     }
     
 }
