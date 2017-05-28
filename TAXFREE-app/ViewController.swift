@@ -28,6 +28,7 @@ class ViewController : UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        self.dokumenty = RachunekDB.instance.getRachunki()
         showSwipeMenu()
         prepareFABButton()
         prepareToolbar()
@@ -124,6 +125,7 @@ class ViewController : UIViewController
     }
     
     @IBAction func nowyClick(_ sender: Any) {
+        performSegue(withIdentifier: "DetailSegue", sender: self)
     }
     @IBAction func zgloszoneClick(_ sender: Any) {
     }
@@ -146,7 +148,7 @@ extension ViewController {
     }
     
     @objc fileprivate func handleFABButton(button: UIButton) {
-        print("fabButtonClick")
+        performSegue(withIdentifier: "DetailSegue", sender: self)
     }
     
     fileprivate func prepareToolbar() {
@@ -156,7 +158,6 @@ extension ViewController {
     }
 
     fileprivate func prepareCard() {
-        self.dokumenty = RachunekDB.instance.getRachunki()
         card.toolbar = toolbar
         card.contentView = tvSellers
         view.layout(card).horizontally(left: 10, right: 10).center()

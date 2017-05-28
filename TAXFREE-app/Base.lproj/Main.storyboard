@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pyo-fY-UiQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pyo-fY-UiQ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -518,7 +518,7 @@
                                                 <connections>
                                                     <outlet property="LblTitle" destination="Uzp-N3-ypv" id="ZwU-7J-C56"/>
                                                     <outlet property="lvPhoto" destination="7Vh-BO-8Px" id="HdI-wV-tnQ"/>
-                                                    <segue destination="DXM-0W-e9l" kind="presentation" identifier="DetailSegue" id="SVj-Ry-g87"/>
+                                                    <segue destination="DXM-0W-e9l" kind="presentation" identifier="DetailSegue" modalPresentationStyle="pageSheet" modalTransitionStyle="partialCurl" id="SVj-Ry-g87"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>

@@ -191,7 +191,52 @@ extension DetailViewController {
     }
     
     @objc fileprivate func handleFABButton(button: UIButton) {
-        print("fabButtonClick2")
+        var s = Wystawca(Id: 0, Nazwa: String(nazwaSprzedawcyfield.text), NIP: String(nipfield.text), Adres: Adres (Ulica: String(""),NrBudynku: String(""), NrLokalu: String(""), Miejscowosc: String(""), KodPocztowy: String(kodPocztowyfield.text),Poczta: String("")));
+        var p = Podrozny(Id: 0, Imie: String("") , Nazwisko: String(""), NrPaszportu: String(nrPaszportufield.text));
+        var lAsortymentu: [String] = []
+        if chbAGD.isChecked {
+            lAsortymentu.append(chbAGD.value);
+        }
+        if chbBudowlane.isChecked {
+            lAsortymentu.append(chbBudowlane.value);
+        }
+        if chbChemia.isChecked {
+            lAsortymentu.append(chbChemia.value);
+        }
+        if chbElektronarzedzia.isChecked {
+            lAsortymentu.append(chbElektronarzedzia.value);
+        }
+        if chbElektronika.isChecked {
+            lAsortymentu.append(chbElektronika.value);
+        }
+        if chbHigiena.isChecked {
+            lAsortymentu.append(chbHigiena.value);
+        }
+        if chbKosmetyki.isChecked {
+            lAsortymentu.append(chbKosmetyki.value);
+        }
+        if chbOdziez.isChecked {
+            lAsortymentu.append(chbOdziez.value);
+        }
+        if chbOgrodnicze.isChecked {
+            lAsortymentu.append(chbOgrodnicze.value);
+        }
+        if chbRTV.isChecked {
+            lAsortymentu.append(chbRTV.value);
+        }
+        if chbSpozywcze.isChecked {
+            lAsortymentu.append(chbSpozywcze.value);
+        }
+        if chbTekstylia.isChecked {
+            lAsortymentu.append(chbTekstylia.value);
+        }
+        if chbBizuteria.isChecked {
+            lAsortymentu.append(chbBizuteria.value);
+        }
+        if chbCzesciSam.isChecked {
+            lAsortymentu.append(chbCzesciSam.value);
+        }
+        doktf =  Rachunek (wystawca: s, podrozny: p,nrRachunku: nrDokumentufield.text,wartosc: Double(wartoscfield.text)!,kodWaluty: Waluta(rawValue: walutafield.text)!,dataWystawienia: String(dataWystawieniafield.text), listaAsortymentu: lAsortymentu, opisAsortymentu: innyAsortymentfield.text);
     }
 }
 
