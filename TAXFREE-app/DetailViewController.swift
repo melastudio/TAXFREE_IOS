@@ -236,7 +236,9 @@ extension DetailViewController {
         if chbCzesciSam.isChecked {
             lAsortymentu.append(chbCzesciSam.value);
         }
-        doktf =  Rachunek (wystawca: s, podrozny: p,nrRachunku: nrDokumentufield.text,wartosc: Double(wartoscfield.text)!,kodWaluty: Waluta(rawValue: walutafield.text)!,dataWystawienia: String(dataWystawieniafield.text), listaAsortymentu: lAsortymentu, opisAsortymentu: innyAsortymentfield.text);
+        //doktf =  Rachunek (wystawca: s, podrozny: p,nrRachunku: nrDokumentufield.text,wartosc: Double(wartoscfield.text)!,kodWaluty: Waluta(rawValue: walutafield.text)!,dataWystawienia: String(dataWystawieniafield.text), listaAsortymentu: lAsortymentu, opisAsortymentu: innyAsortymentfield.text);
+        //performSegue(withIdentifier: "UnwindToSegueID", sender: self);
+
     }
 }
 
